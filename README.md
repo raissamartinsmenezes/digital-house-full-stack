@@ -1,22 +1,42 @@
-## Aula 30/10
+# HTML + CSS
 
-### PESQUISAR
+[Aula 28/10](#aula28out)\
+[Aula 30/10](#aula30out)\
 
-- Plug-in para ver o JSON no Chrome
-- Plug-in para retirar o CSS do HTML
-- Atributo `rel=""`
-- Transpila > transforma uma linguagem na outra
-- Compila > transforma para binário 
+#### ESTUDOS EXTRAS
 
-### LINKS PARA ESTUDO
+[ ] Plug-in para ver o JSON no Chrome
+[ ] Plug-in para retirar o CSS do HTML
+[ ] Atributo `rel=""`
+[ ] Transpila > transforma uma linguagem na outra
+[ ] Compila > transforma para binário 
 
-[Full Stack Open 2019](https://fullstackopen.com/)
+#### ATALHOS
+* CTRL (segura) + K + O > abre a tela de pastas 
+* CTRL + N > abre uma nova aba em branco 
+* `ol>li*3` - atalho para a construção do HTML 
+* Com o lado direito do mouse, em cima do arquivo > **Copy Path** 
+* CTRL + B > esconde e mostra o explorer que mostra os arquivos na lateral esquerda
 
-[Commonmark.org](https://commonmark.org/)
+#### LINKS ÚTEIS 
+Links aleátorios interessantes:
 
-[Badges Github](https://shields.io/)
+[Full Stack Open 2019](https://fullstackopen.com/)\
+[Commonmark.org](https://commonmark.org/)\
+[Badges Github](https://shields.io/)\
+
+---
+<div id="aula28out"></div>
+
+## Aula 28/10
 
 [Unicode e UTF-8](https://www.ime.usp.br/~pf/algoritmos/apend/unicode.html)
+
+---
+<div id="aula30out"></div>
+
+## Aula 30/10
+
 
 ### Continuação - ELEMENTOS HTML
 
@@ -31,14 +51,7 @@ Atributo `type=""` e valores abaixo:
 * disc, square, circle para `<ol>` e `<ul>`
 
 Atributo `start=""`
-- É só determinar o valor em número de onde a lista irá iniciar :)
-
-#### ATALHOS
-* CTRL (segura) + K + O > abre a tela de pastas 
-* CTRL + N > abre uma nova aba em branco 
-* `ol>li*3` - atalho para a construção do HTML 
-* Com o lado direito do mouse, em cima do arquivo > **Copy Path** 
-* CTRL + B > esconde e mostra o explorer que mostra os arquivos na lateral esquerda 
+- É só determinar o valor em número de onde a lista irá iniciar :) 
 
 ### CSS
 
