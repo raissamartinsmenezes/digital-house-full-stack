@@ -106,7 +106,7 @@ Como suas informações vem por meio de atributos, ela não precisa de fechament
 
 **Elementos de cabeçalho**
 
-Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e <h6> é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`.
+Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e `<h6>` é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`.
 
 `<p>`
 
