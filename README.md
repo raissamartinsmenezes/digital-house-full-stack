@@ -99,8 +99,8 @@ Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará de
 
 Como suas informações vem por meio de atributos, ela não precisa de fechamento.
 
-[Elemento <meta> - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta)
-[<meta> TAGS](https://www.chiefofdesign.com.br/meta-tags/)
+[Elemento `<meta>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta)\
+[`<meta>` TAGS](https://www.chiefofdesign.com.br/meta-tags/)
 
 #### TAGS
 
@@ -114,8 +114,8 @@ Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais imp
 
 **Elementos de listas**
 
-[`<ol>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol)\
-[`<ul>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul)
+[`<ol>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol)\
+[`<ul>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul)
 
 ---
 
