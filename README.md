@@ -1,15 +1,16 @@
 # HTML + CSS
 
 [Aula 28/10](#aula28out)\
-[Aula 30/10](#aula30out)\
+[Aula 30/10](#aula30out)
 
+---
 #### ESTUDOS EXTRAS
 
-[ ] Plug-in para ver o JSON no Chrome
-[ ] Plug-in para retirar o CSS do HTML
-[ ] Atributo `rel=""`
-[ ] Transpila > transforma uma linguagem na outra
-[ ] Compila > transforma para binário 
+- [ ] Plug-in para ver o JSON no Chrome
+- [ ] Plug-in para retirar o CSS do HTML
+- [ ] Atributo `rel=""`
+- [ ] Transpila > transforma uma linguagem na outra
+- [ ] Compila > transforma para binário 
 
 #### ATALHOS
 * CTRL (segura) + K + O > abre a tela de pastas 
@@ -23,7 +24,7 @@ Links aleátorios interessantes:
 
 [Full Stack Open 2019](https://fullstackopen.com/)\
 [Commonmark.org](https://commonmark.org/)\
-[Badges Github](https://shields.io/)\
+[Badges Github](https://shields.io/)
 
 ---
 <div id="aula28out"></div>
