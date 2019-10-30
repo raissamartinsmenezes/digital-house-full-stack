@@ -1,7 +1,7 @@
 # HTML + CSS
 
 [Aula 28/10](#aula28out)\
-[Aula 30/10](#aula30out)
+[Aula 30/10](#aula30out)\
 **[Estudos Extras](#estudosextras)**
 
 --- 
@@ -18,9 +18,9 @@
 
 [Full Stack Open 2019 - Curso](https://fullstackopen.com/)\
 [Commonmark.org - Jogo para aprender linguagem Markdown](https://commonmark.org/)\
-[Badges Github - Site para criar distintivos para a documentação do Github](https://shields.io/)
-[Plug-in JSON Formatter para o Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR)
-[Validador de HTML W3C - Markup Validation Service](https://validator.w3.org/)
+[Badges Github - Site para criar distintivos para a documentação do Github](https://shields.io/)\
+[Plug-in JSON Formatter para o Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR)\
+[Validador de HTML W3C - Markup Validation Service](https://validator.w3.org/)\
 [The Front-end Cheklist](https://frontendchecklist.io/)
 
 ---
@@ -29,11 +29,11 @@
 
 ## Aula 28/10
 
-### HTML(Hyper Text Markup Language)
+### HTML (Hyper Text Markup Language)
 
-Ordem de aula:\
+Ordem de aula:
 1. Analisamos o site da [UOL](https://www.uol.com.br/) através do Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools?hl=pt-br)
-2. Abrimos a aba Elements e inspecionamos os elementos `<html>``<head>``<body>`
+2. Abrimos a aba Elements e inspecionamos os elementos `<html> <head> <body>`
 3. Ainda na aba Elements o professor explicou sobre os **atributos** e sua sintaxe
 4. Depois disso abrimos o bloco de notas e construimos a seguinte estrutura:
 
@@ -59,9 +59,9 @@ Ordem de aula:\
 </html>
 ```
 
-#### ELEMENTOS HTML
+#### ELEMENTO HTML
 
-É considerado um **elemento HTML** quando ele é formado por uma tag de abertura e outra de fechamento
+É considerado um **elemento HTML** quando ele é formado por uma tag de abertura e outra de fechamento.
 
 `<body>` tag de abertura\
 `</body>` tag de fechamento
@@ -72,7 +72,7 @@ Ordem de aula:\
 
 Nem todo atributo precisa de valor!
 
-`charset="utf-8"` atributo conjunto de caracteres com valor **UTF-8(8-bit Unicode Transformation Format)**, este valor é um esquema de codificação *(character encoding)* que basicamente mapeia os **bits** (zeros e uns) em **caracteres**
+`charset="utf-8"` atributo **conjunto de caracteres** com valor **UTF-8 (8-bit Unicode Transformation Format)**, este valor é um esquema de codificação *(character encoding)* que basicamente mapeia os **bits** (zeros e uns) em **caracteres**.
 
 [Unicode e UTF-8](https://www.ime.usp.br/~pf/algoritmos/apend/unicode.html)
 
@@ -82,7 +82,7 @@ A [indentação](https://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o) de código 
 
 #### HIERARQUIA
 
-Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará dentro de seu pai, portanto ele será filho, ele também poderá ter irmão, se outros elementos estiverem no mesmo nível que ele
+Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará dentro de seu pai, portanto ele será filho, ele também poderá ter irmão, se outros elementos estiverem no mesmo nível que ele.
 
 ```html
 <body> <!-- tag de abertura e pai de <h1> e <p> -->
@@ -95,9 +95,9 @@ Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará de
 
 [Elementos semânticos](https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065)
 
-#### TAG <meta>
+#### TAG `<meta>`
 
-Como suas informações vem por meio de atributos, ela não precisa de fechamento
+Como suas informações vem por meio de atributos, ela não precisa de fechamento.
 
 [Elemento <meta> - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta)
 [<meta> TAGS](https://www.chiefofdesign.com.br/meta-tags/)
@@ -106,7 +106,7 @@ Como suas informações vem por meio de atributos, ela não precisa de fechament
 
 **Elementos de cabeçalho**
 
-Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e <h6> é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`
+Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e <h6> é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`.
 
 `<p>`
 
