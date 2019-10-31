@@ -76,6 +76,11 @@ Nem todo atributo precisa de valor!
 
 [Unicode e UTF-8](https://www.ime.usp.br/~pf/algoritmos/apend/unicode.html)
 
+`rel=""` atributo usado apenas quando o `href=""` é referenciado, utilizado principalmente em se trantando de performance de SEO. Usada para atribuir uma relação entre o documento atual e o linkado pelo `href=""`.
+
+[Atributo `rel=""` e seus valores](https://ferramentasseo.club/rel-nofollow-noreferrer-noopener-external)
+[Atributo `rel=""` - W3C](https://www.w3schools.com/TAGS/att_a_rel.asp)
+
 #### INDENTAÇÃO
 
 A [indentação](https://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o) de código é empregada na maioria das linguagens de programação com o objetivo de **organizar/estruturar** o **código/algoritmo**, facilitando em consequência disso a **legibilidade do código**, ou seja, tornar a interpretação do código mais fácil. Além disso,é usada para **definir a hierarquia** entre as partes do código.
@@ -108,7 +113,7 @@ Como suas informações vem por meio de atributos, ela não precisa de fechament
 
 Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e `<h6>` é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`.
 
-`<p>`
+`<p>` tag para construção de parágrafo
 
 [Lorem Ipsum](https://br.lipsum.com/)
 
@@ -127,14 +132,43 @@ Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais imp
 
 [Especificidade, herança e efeito cascata](https://medium.com/emanuelg-blog/entendendo-a-preced%C3%AAncia-de-estilo-em-css-especificidade-heran%C3%A7a-e-efeito-cascata-a437c4929173)
 
-**Externo, Interno e Inline**
+**Estilos: Externo, Interno e Inline**
 
 [Diferença entre estilos CSS](https://www.hostinger.com.br/tutoriais/diferenca-entre-estilos-css/)
 
+Ordem de precedência:
+8. Folha de estilo padrão do navegador do usuário
+7. Folha de estilo do usuário
+6. Folha de estilo do desenvolvedor
+5. Estilo externo (importado ou linkado)
+4. Estilo incorporado (definido na seção head do documento)
+3. Estilo inline (dentro de um elemento HTML)
+2. Declarações do desenvolvedor com !important
+1. Declarações do usuário com !important
+
 **Seletores**
-* Básicos: tag, classe e id *(maior precedência)*
-* [Seletores - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores)
-* [Tabela de seletores](https://tableless.com.br/referencia-seletores-css/)
+* Básicos: 
+	- tipo > `<tag>`
+	- classe > `.classe`
+	- id > `#id`
+	- universal > `*`
+	- atibuto > `[attr="value"]`
+
+[Seletores - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Getting_Started/Seletores)\
+[CSS selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors)\
+[Pseudo-classes:](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)\
+[Pseudo-elementos::](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)\
+[Tabela de seletores](https://tableless.com.br/referencia-seletores-css/)\
+[Teste de seletores - W3C](https://www.w3schools.com/cssref/trysel.asp)
+
+Especificidade dos seletores:
+7. Seletores universais
+6. Tipos de seletores
+5. Classes seletoras
+4. Atributos seletores
+3. Pseudo-classes
+2. Seletores id
+1. Estilo inline
 
 **Regra de CSS:**
 ```
@@ -145,20 +179,17 @@ seletor {
 }
 ```
 
+*CONTINUAÇÃO DA AULA EM 01/11*
+
 ---
 
 <div id="estudosextras"></div>
 
 #### ESTUDOS EXTRAS
 
-- [ ] Plug-in para retirar o CSS do HTML
-- [ ] Atributo `rel=""`
-- [ ] Transpila > transforma uma linguagem na outra
-- [ ] Compila > transforma para binário
-- [ ] Como construir páginas com o selo Github?
-- [ ] Estudar o atibuto `charset="utf-8"` 
-- [ ] Especificidade no CSS
-- [ ] Qual a tradução das tags?
-- [ ] Quais tags só podem ser usadas uma vez no `<html>`
-- [ ] Qual o grau de precedência do CSS (inline, externo e interno)?
+- [ ] Plug-in para retirar o CSS do HTML *perguntar para o professor*
+- [x] **Transpila > transforma uma linguagem na outra**
+- [x] **Compila > transforma para binário**
+
+
 
