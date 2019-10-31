@@ -137,14 +137,14 @@ Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais imp
 [Diferença entre estilos CSS](https://www.hostinger.com.br/tutoriais/diferenca-entre-estilos-css/)
 
 Ordem de precedência:\
-8. Folha de estilo padrão do navegador do usuário\
-7. Folha de estilo do usuário\
-6. Folha de estilo do desenvolvedor\
-5. Estilo externo (importado ou linkado)\
-4. Estilo incorporado (definido na seção head do documento)\
-3. Estilo inline (dentro de um elemento HTML)\
-2. Declarações do desenvolvedor com !important\
-1. Declarações do usuário com !important
+8 Folha de estilo padrão do navegador do usuário\
+7 Folha de estilo do usuário\
+6 Folha de estilo do desenvolvedor\
+5 Estilo externo (importado ou linkado)\
+4 Estilo incorporado (definido na seção head do documento)\
+3 Estilo inline (dentro de um elemento HTML)\
+2 Declarações do desenvolvedor com !important\
+1 Declarações do usuário com !important
 
 **Seletores**
 * Básicos: 
@@ -162,13 +162,13 @@ Ordem de precedência:\
 [Teste de seletores - W3C](https://www.w3schools.com/cssref/trysel.asp)
 
 Especificidade dos seletores:\
-7. Seletores universais\
-6. Tipos de seletores\
-5. Classes seletoras\
-4. Atributos seletores\
-3. Pseudo-classes\
-2. Seletores id\
-1. Estilo inline
+7 Seletores universais\
+6 Tipos de seletores\
+5 Classes seletoras\
+4 Atributos seletores\
+3 Pseudo-classes\
+2 Seletores id\
+1 Estilo inline
 
 **Regra de CSS:**
 ```
