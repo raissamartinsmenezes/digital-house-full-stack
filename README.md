@@ -13,6 +13,14 @@
 * `ol>li*3` > atalho para a construção do HTML 
 * Com o lado direito do mouse, em cima do arquivo > **Copy Path** 
 * CTRL + B > esconde e mostra o explorer que mostra os arquivos na lateral esquerda
+* `h3{conteúdo da tag}` > atalho para a construção do conteúdo dentro da tag
+* Volta o caractere ou `CTRL + espaço` quando a caixinha de autocomplete desaparecer no vscode
+* `alt + seta para cima/seta para baixo` para articular a linha de código para cima ou para baixo
+* Criando a pasta e o arquivo do css:
+	- No HTML enquanto estiver escrevendo a tag `link` ele vai abrir o autocomplete **emmet** com opções, escolher a `link:css + enter`
+	- Ele vai criar a tag completa `<link rel="stylesheet" href="style.css">`
+	- Adicionar o caminho da pasta `<link rel="stylesheet" href="css/style.css">`
+	- Em cima de `href="css/style.css"` clicar `CTRL + enter` > **Create file** e ele vai criar a pasta com o arquivo  
 
 #### LINKS ÚTEIS 
 
@@ -22,6 +30,10 @@
 [Plug-in JSON Formatter para o Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR)\
 [Validador de HTML W3C - Markup Validation Service](https://validator.w3.org/)\
 [The Front-end Cheklist](https://frontendchecklist.io/)
+
+#### CAMINHOS RELATIVOS E ABSOLUTOS
+
+*Pesquisar!!!*
 
 ---
 
@@ -38,7 +50,7 @@ Ordem de aula:
 4. Depois disso abrimos o bloco de notas e construimos a seguinte estrutura:
 
 ```html
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- essa tag faz o browser entender que estamos usando o HTML5 -->
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -58,6 +70,8 @@ Ordem de aula:
 </body>
 </html>
 ```
+
+Sempre que for criar a tag no **vscode**, escrever apenas o nome da tag `a + enter` para que ele realize o autocomplete com os atributos obrigatórios, caso o contrário, se escrever com os fechamentos `<a> + enter` ele vai criar apenas a tag sem os atributos.  
 
 #### ELEMENTO HTML
 
@@ -80,6 +94,8 @@ Nem todo atributo precisa de valor!
 
 [Atributo `rel=""` e seus valores](https://ferramentasseo.club/rel-nofollow-noreferrer-noopener-external)\
 [Atributo `rel=""` - W3C](https://www.w3schools.com/TAGS/att_a_rel.asp)
+
+`title=""` atributo que cria uma caixinha de título e pode ser usado com qualquer tag, é uma tag importante para rankeamento de SEO.
 
 #### INDENTAÇÃO
 
@@ -114,6 +130,7 @@ Como suas informações vem por meio de atributos, ela não precisa de fechament
 Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e `<h6>` é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`.
 
 `<p>` tag para construção de parágrafo
+`</br>` só pode ser usado para quebra de linhas dentro dos parágrafos
 
 [Lorem Ipsum](https://br.lipsum.com/)
 
@@ -190,6 +207,11 @@ seletor {
 - [ ] Plug-in para retirar o CSS do HTML *perguntar para o professor*
 - [x] **Transpila > transforma uma linguagem na outra**
 - [x] **Compila > transforma para binário**
+- [ ] Como transformar os bullets da `<ul>` *perguntar para o professor*
+- [ ] Porque as vezes o caminho `img/imagem.jpg` não funciona e temos que colocar `./img/imagem.jpg`
 
+#### ANOTAÇÕES DA AULA 01/11
 
-
+`<a>` links externos e internos\
+`<a>` links âncoras, email e telefone\
+`<img src="" alt="" width="" height=""/>` **src** > para conteúdo, **alt** para descrição da imagem

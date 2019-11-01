@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+    object-position: 0 70%;
+}
