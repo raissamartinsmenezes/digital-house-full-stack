@@ -2,11 +2,25 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-image: url('https://images.unsplash.com/photo-1572686279535-3da8ef858512?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80');   
+    /* background-color: brown; */
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
 li {
     list-style: none;
+    opacity: 0.3;
 }
 
 img {
     object-fit: cover;
     object-position: 0 70%;
+}
+
+p {
+    color: rgb(51, 49, 49);
 }

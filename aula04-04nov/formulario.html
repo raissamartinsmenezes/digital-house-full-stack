@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <a href="../aula03-01nov/index.html">Volta para a Aula 01/11</a>
+    <hr>
+    <form action="" method="GET" required>
+        <legend>Formulário</legend>
+        <div>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+            <input type="email" name="email" placeholder="Digite seu email">
+            <input type="password" name="senha" placeholder="Digite seu nome">
+        </div>
+
+        <div>
+            <h3>Escolha seu sexo</h3>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="outro">Outro</label>
+        </div>
+
+        <div>
+            <h3>Como você nos conheceu?</h3>
+            <input type="checkbox" name="conhecer" id="jornal">
+            <label for="jornal">Jornal</label>
+            <input type="checkbox" name="conhecer" id="internet">
+            <label for="">Internet</label>
+            <input type="checkbox" name="conhecer" id="outro">
+            <label for="">Outro</label>
+        </div>
+
+        <div>
+            <label for="cidade">Cidade</label>
+            <select name="cidade" id="cidade">
+                <option disabled selected>Selecione</option>
+                <optgroup label="Cidades de São Paulo">
+                    <option value="sao">São Paulo</option>
+                    <option value="minas">São Bernardo</option>
+                    <option value="rio">São Caetano do Sul</option>
+                </optgroup>
+                <optgroup label="Cidades do Ceará">
+                    <option value="fortal">Fortaleza</option>
+                    <option value="cariri">Cariri</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+            <label for="comentario">Deixe um comentário aqui:</label>
+            <textarea name="comentario" id="comentario" maxlength="255"></textarea>
+            <small>O máximo de caracteres é 255</small>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form> 
+</body>
+</html>

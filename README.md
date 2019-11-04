@@ -2,7 +2,8 @@
 
 [Aula 28/10](#aula28out)\
 [Aula 30/10](#aula30out)\
-**[Estudos Extras](#estudosextras)**
+**[Estudos Extras](#estudosExtras)**
+**[Anotações de Aula](#anotacoesAula)**
 
 --- 
 
@@ -21,6 +22,9 @@
 	- Ele vai criar a tag completa `<link rel="stylesheet" href="style.css">`
 	- Adicionar o caminho da pasta `<link rel="stylesheet" href="css/style.css">`
 	- Em cima de `href="css/style.css"` clicar `CTRL + enter` > **Create file** e ele vai criar a pasta com o arquivo  
+* Seleciona as linhas que você quer copiar + `alt + shift + seta para cima/seta para baixo` e ele vai copiar a linha
+* `CRTL + D` seleciona a primeira palavra se apertar de novo ele seleciona a próxima palavra e você pode mudar os nomes das duas ao mesmo tempo 
+* `div>input+label` cria div mãe e dentro dela os filhos input e label 
 
 #### LINKS ÚTEIS 
 
@@ -200,7 +204,7 @@ seletor {
 
 ---
 
-<div id="estudosextras"></div>
+<div id="estudosExtras"></div>
 
 #### ESTUDOS EXTRAS
 
@@ -209,9 +213,52 @@ seletor {
 - [x] **Compila > transforma para binário**
 - [ ] Como transformar os bullets da `<ul>` *perguntar para o professor*
 - [ ] Porque as vezes o caminho `img/imagem.jpg` não funciona e temos que colocar `./img/imagem.jpg`
+- [ ] Como usar as propriedades opacity e background-image juntas?
+- [ ] Como mudar as bolinhas do input para asteriscos?
+
+---
+
+<div id="anotacoesAula"></div>
 
 #### ANOTAÇÕES DA AULA 01/11
 
 `<a>` links externos e internos\
 `<a>` links âncoras, email e telefone\
 `<img src="" alt="" width="" height=""/>` **src** > para conteúdo, **alt** para descrição da imagem
+
+`background-position: 100px 100px` a utilização de medidas especificas é só para contornar pequenas movimentações da imagem\
+`background-attachment: fixed` a imagem fica fixa no fundo e o conteúdo rola com a barra de rolagem 
+
+`<em>` itálico semântico\
+`<strong>` ênfase semântica\
+`<mark>`\
+`<cite>`\
+`<abbr title="Wolrd Wide Web Consortium">W3C (Abreviação)</abbr>` para mostrar o significado das abreviações
+
+#### ANOTAÇÕES DA AULA 04/11
+
+**Formulários**
+- form
+`action="script.php"` os dados que eu preenchi no formulário vão para este arquivo\ 
+`method="post"` get não usamos para informações sensíveis e sim o post, pois esses dados não aparecerão na url\
+`method="get"` envia as informações pela url\
+
+- input
+`type="email"` tipo de validação (text - nome, email e password)\
+`name="usuario` o atributo name liga o front-end com o back-end, se eu não tenho o nome desse campo ele não existe no back-end\
+`value=""`\
+`required`\
+`type="radio"` e `type="checkbox"`\
+`placeholder="user@email.com"`\
+`<label for=""></label>` é importante conectar o label ao `<input id="">` através do id por questões de acessibilidade, pois sem essa conexão o usuário só poderá clicar na bolinha e com ela, se ele clicar no nome automaticamente a bolinha será selecionada\
+`<input type="radio" name=cidade>` quando o input for do tipo radio e estiver relacionado a um bloco específico, por exemplo quando quero capturar uma cidade de opções de cidade, se todos os inputs de opção não estiverem relacionados com o mesmo `name="cidade"`, não será possível selecionar apenas uma opção dentre várias\
+
+* pseudo:seletores 
+	- hover
+	- active
+	- input:focus
+
+
+
+
+

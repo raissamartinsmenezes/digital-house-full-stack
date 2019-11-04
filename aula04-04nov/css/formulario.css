@@ -1,0 +1,47 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); */
+
+body {
+    background-color: rgb(235, 235, 235);
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    width: 30%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+}
+
+input[type=email],
+input[type=text],
+input[type=password],
+select,
+textarea,
+button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+form div,
+form legend {
+    margin-bottom: 3%;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(246, 246, 246);
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 3%;
+}
+
+button:hover {
+    background-color: rgb(124, 124, 124);
+    color: white;
+    cursor: pointer;
+}
+
+/* cursor: none */
