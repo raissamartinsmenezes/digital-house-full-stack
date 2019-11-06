@@ -24,7 +24,8 @@
 	- Em cima de `href="css/style.css"` clicar `CTRL + enter` > **Create file** e ele vai criar a pasta com o arquivo  
 * Seleciona as linhas que você quer copiar + `alt + shift + seta para cima/seta para baixo` e ele vai copiar a linha
 * `CRTL + D` seleciona a primeira palavra se apertar de novo ele seleciona a próxima palavra e você pode mudar os nomes das duas ao mesmo tempo 
-* `div>input+label` cria div mãe e dentro dela os filhos input e label 
+* `div>input+label` cria div mãe e dentro dela os filhos input e label
+* `CRTL + espaço` sugestão de auto completar do emmet 
 
 #### LINKS ÚTEIS 
 
@@ -215,6 +216,8 @@ seletor {
 - [ ] Porque as vezes o caminho `img/imagem.jpg` não funciona e temos que colocar `./img/imagem.jpg`
 - [ ] Como usar as propriedades opacity e background-image juntas?
 - [ ] Como mudar as bolinhas do input para asteriscos?
+- [ ] Reset de CSS
+- [ ] Como editar a barra de rolagem no CSS **[scrollBar](https://pt.stackoverflow.com/questions/68928/como-estilizar-a-barra-de-rolagem)**
 
 ---
 
@@ -258,7 +261,29 @@ seletor {
 	- active
 	- input:focus
 
+#### ANOTAÇÕES DA AULA 06/11
 
+* tags semânticas 
+	- `<span>`
+	- `<div>`
+	- `<pre>` mais usado no **php**
+	- `<section>` seção de conteúdo monotemático
+	- `<article>` informações dentro de uma seção
+	- `<header>` cabeçalho do conteúdo ou de um documento
+	- `<footer>` rodapé do conteúdo ou de um documento
+
+* display 
+	- inline 
+	- block
+	- inline-block
+	- none
+
+A declaração **shorthand** `border:` não precisa seguir uma ordem, apenas o `padding:` e `margin:`\
+
+`box-sizing: border-box`\
+`box-sizing: content-box` > padrão\
+
+`padding:` aumenta a área clicável e é melhor para a acessibilidade
 
 
 
