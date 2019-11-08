@@ -1,0 +1,82 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    /* width: 45%; */
+    /* margin: 0 auto; */
+    border: solid 2px rgb(243, 243, 113);
+    background-color: rgb(243, 243, 113);
+    /* margin-top: 4%; */
+    padding: 20px;
+}
+
+/* seletor filho direto e não descendentes */
+main > section {
+    border: solid 2px rgb(214, 154, 214);
+    background-color: rgb(94, 11, 94);
+    width: 30%;
+    height: 200px;
+    margin: 2%;
+    position: relative;
+}
+
+main > section > article {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(167, 116, 214);
+}
+
+.a {
+    background-color: rgb(139, 224, 224);
+    position: relative;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+
+.b {
+    background-color: rgb(221, 92, 152);
+    position: static; /* por padrão todos os elementos são static */
+    top: 30px; /* desprezado, pois o position está static */
+    left: 30px; /* desprezado, pois o position está static */
+}
+
+.c {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+footer {
+    position: relative;
+    background-color: rgb(202, 202, 202);
+}
+
+footer div {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(40, 194, 117);
+    border: solid 1px rgb(27, 109, 68)
+}
+
+footer div:first-child {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+footer div:nth-child(2) {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* footer div:nth-child(3) {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+} */
+/* o espaço inicial do um está sendo respeitado pelo 3 */
