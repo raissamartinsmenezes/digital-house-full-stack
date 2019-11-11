@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    background-color: rgb(202, 238, 255);
+    padding: 40px 0;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 400px;
+    /* margin: 50px 0; */
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+}
+
+/* tanto botão quanto input seguiram o mesmo tamanho graças ao display flex, eles se tornaram flex-items do mesmo pai, por isso seguem o mesmo tamanho, por padrão eles possuiem o alinhamento stretch */
+header form input {
+    font-family: 'Lato';
+    padding: 10px;
+    font-size: 16px;
+    /* height: 39px; */
+    /* width: 75%; */
+    outline: none;
+}
+
+/* header form input:focus {
+    outline: none;
+} */
+
+header form button {
+    padding: 0 20px;
+    font-size: 15px;
+    /* padding: 12px 20px; */
+    border: solid 1px #cccccc;
+}
+
+nav {
+    background-color: #f0f0f0;
+    border-top: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+}
+
+nav ul {
+    display: flex; 
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
