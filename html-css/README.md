@@ -7,34 +7,6 @@
 
 --- 
 
-#### ATALHOS
-
-* CTRL (segura) + K + O > abre a tela de pastas 
-* CTRL + N > abre uma nova aba em branco 
-* `ol>li*3` > atalho para a construção do HTML 
-* Com o lado direito do mouse, em cima do arquivo > **Copy Path** 
-* CTRL + B > esconde e mostra o explorer que mostra os arquivos na lateral esquerda
-* `h3{conteúdo da tag}` > atalho para a construção do conteúdo dentro da tag
-* Volta o caractere ou `CTRL + espaço` quando a caixinha de autocomplete desaparecer no vscode
-* `alt + seta para cima/seta para baixo` para articular a linha de código para cima ou para baixo
-* Criando a pasta e o arquivo do css:
-	- No HTML enquanto estiver escrevendo a tag `link` ele vai abrir o autocomplete **emmet** com opções, escolher a `link:css + enter`
-	- Ele vai criar a tag completa `<link rel="stylesheet" href="style.css">`
-	- Adicionar o caminho da pasta `<link rel="stylesheet" href="css/style.css">`
-	- Em cima de `href="css/style.css"` clicar `CTRL + enter` > **Create file** e ele vai criar a pasta com o arquivo  
-* Seleciona as linhas que você quer copiar + `alt + shift + seta para cima/seta para baixo` e ele vai copiar a linha
-* `CRTL + D` seleciona a primeira palavra se apertar de novo ele seleciona a próxima palavra e você pode mudar os nomes das duas ao mesmo tempo 
-* `div>input+label` cria div mãe e dentro dela os filhos input e label
-* `CRTL + espaço` sugestão de auto completar do emmet 
-
-#### LINKS ÚTEIS 
-
-[Full Stack Open 2019 - Curso](https://fullstackopen.com/)\
-[Commonmark.org - Jogo para aprender linguagem Markdown](https://commonmark.org/)\
-[Badges Github - Site para criar distintivos para a documentação do Github](https://shields.io/)\
-[Plug-in JSON Formatter para o Chrome](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR)\
-[Validador de HTML W3C - Markup Validation Service](https://validator.w3.org/)\
-[The Front-end Cheklist](https://frontendchecklist.io/)
 
 #### CAMINHOS RELATIVOS E ABSOLUTOS
 
@@ -45,8 +17,6 @@
 <div id="aula28out"></div>
 
 ## Aula 28/10
-
-### HTML (Hyper Text Markup Language)
 
 Ordem de aula:
 1. Analisamos o site da [UOL](https://www.uol.com.br/) através do Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools?hl=pt-br)
@@ -76,31 +46,67 @@ Ordem de aula:
 </html>
 ```
 
-Sempre que for criar a tag no **vscode**, escrever apenas o nome da tag `a + enter` para que ele realize o autocomplete com os atributos obrigatórios, caso o contrário, se escrever com os fechamentos `<a> + enter` ele vai criar apenas a tag sem os atributos.  
+### HTML (Hyper Text Markup Language)
+
+Composta por **TAGs** e **ATRIBUTOS** que, por sua vez, formam **ELEMENTOS**.
+
+Sintaxe de uma tag:\
+`<h1 align="center"> ... </h1>`\ 
+
+Definição:\
+é um trecho de código que permite gerar um elemento visual no navegador.
 
 #### ELEMENTO HTML
 
-É considerado um **elemento HTML** quando ele é formado por uma tag de abertura e outra de fechamento.
+É considerado um **elemento HTML** quando ele é formado por uma tag de abertura e outra de fechamento e o que está contido nela (seu **conteúdo**).
 
 `<body>` tag de abertura\
 `</body>` tag de fechamento
 
 #### ATRIBUTOS 
 
+Definição:\
+Característica que queremos modificar de uma tag. Costuma ter vários valores ( característica que vamos modificar).
+
 `atributo="valor"` atributo recebe o valor (ref: [Gustavo Guanabara](https://www.youtube.com/watch?v=rsFCVjr5yxc))
 
 Nem todo atributo precisa de valor!
 
+**Atributo `charset=""`**
+
 `charset="utf-8"` atributo **conjunto de caracteres** com valor **UTF-8 (8-bit Unicode Transformation Format)**, este valor é um esquema de codificação *(character encoding)* que basicamente mapeia os **bits** (zeros e uns) em **caracteres**.
 
+O atributo charset permite definir a codificação de caracteres a ser usada. Embora não seja obrigatório, ele deve ser incluído em qualquer documento HTML por dois motivos principais:\
+1. Para evitar a exibição incorreta em alguns navegadores
+2. Para seguir as convenções e padrões da W3C
+
 [Unicode e UTF-8](https://www.ime.usp.br/~pf/algoritmos/apend/unicode.html)
+
+**Atributo `rel=""`**
 
 `rel=""` atributo usado apenas quando o `href=""` é referenciado, utilizado principalmente em se trantando de performance de SEO. Usada para atribuir uma relação entre o documento atual e o linkado pelo `href=""`.
 
 [Atributo `rel=""` e seus valores](https://ferramentasseo.club/rel-nofollow-noreferrer-noopener-external)\
 [Atributo `rel=""` - W3C](https://www.w3schools.com/TAGS/att_a_rel.asp)
 
+**Atributo `title=""`**
+
 `title=""` atributo que cria uma caixinha de título e pode ser usado com qualquer tag, é uma tag importante para rankeamento de SEO.
+
+#### ESTRUTURA BÁSICA DO HTML
+
+```html
+<!DOCTYPE html>
+	<html>
+		<head>
+		<meta charset=”utf-8”>
+		<title> Meu site </title>
+</head>
+<body>
+	Olá, Mundo!
+</body>
+</html>
+```
 
 #### INDENTAÇÃO
 
@@ -121,18 +127,28 @@ Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará de
 
 [Elementos semânticos](https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065)
 
-#### TAG `<meta>`
+#### TAGS
+
+**Meta tags**
 
 Como suas informações vem por meio de atributos, ela não precisa de fechamento.
 
 [Elemento `<meta>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta)\
 [`<meta>` TAGS](https://www.chiefofdesign.com.br/meta-tags/)
 
-#### TAGS
-
 **Elementos de cabeçalho**
 
-Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e `<h6>` é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`.
+Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e `<h6>` é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`. `<h1>` é uma tag semântica que permite gerar títulos e subtítulos. São muito
+importante para o posicionamento em buscadores.
+
+```html
+<h1> Título principal </h1>
+<h2> Subtítulo </h2>
+<h3> Outro subtítulo </h3>
+<h4> Mais um </h4>
+<h5> Outro, por que não? </h5>
+<h6> Agora sim, o último </h6>
+```
 
 `<p>` tag para construção de parágrafo
 `</br>` só pode ser usado para quebra de linhas dentro dos parágrafos
@@ -141,8 +157,56 @@ Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais imp
 
 **Elementos de listas**
 
-[`<ol>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol)\
+*Listas ordenadas:*\
+[`<ol>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol)
+
+```html
+<ol>
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+</ol>
+```
+*Listas não ordenadas:*\
 [`<ul>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul)
+
+```html
+<ul>
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+</ul>
+```
+
+*Listas aninhadas:*\
+```html
+<ul>
+	<li>
+	Item da lista com lista aninhada
+		<ol>
+			<li>Item da lista aninhada</li>
+			<li>Item da lista aninhada</li>
+		</ol>
+	</li>
+	<li>Item da lista</li>
+	<li>Item da lista</li>
+</ul>
+```
+
+*Atributos das listas:*\
+`type=""` permite alterar o tipo de marcador de cada lista.
+`start=""` permite definir por qual número queremos que a lista comece.
+
+```html
+<ol type="1">...</ol>
+<ol type="A">...</ol>
+<ol type="I">...</ol>
+<ol start="20">...</ol>
+
+<ul type="disc">...</ul>
+<ul type="circle">...</ul>
+<ul type="square">...</ul>
+```
 
 ---
 
