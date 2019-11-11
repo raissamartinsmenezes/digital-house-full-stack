@@ -2,7 +2,7 @@
 
 [Aula 28/10](#aula28out)\
 [Aula 30/10](#aula30out)\
-**[Estudos Extras](#estudosExtras)**
+**[Estudos Extras](#estudosExtras)**\
 **[Anotações de Aula](#anotacoesAula)**
 
 --- 
@@ -20,8 +20,8 @@
 
 Ordem de aula:
 1. Analisamos o site da [UOL](https://www.uol.com.br/) através do Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools?hl=pt-br)
-2. Abrimos a aba Elements e inspecionamos os elementos `<html> <head> <body>`
-3. Ainda na aba Elements o professor explicou sobre os **atributos** e sua sintaxe
+2. Abrimos a aba *Elements* e inspecionamos os elementos `<html> <head> <body>`
+3. Ainda na aba *Elements* o professor explicou sobre os **atributos** e sua sintaxe
 4. Depois disso abrimos o bloco de notas e construimos a seguinte estrutura:
 
 ```html
@@ -50,11 +50,11 @@ Ordem de aula:
 
 Composta por **TAGs** e **ATRIBUTOS** que, por sua vez, formam **ELEMENTOS**.
 
-Sintaxe de uma tag:\
-`<h1 align="center"> ... </h1>`\ 
+*Sintaxe de uma tag:*\
+`<h1 align="center"> ... </h1>` 
 
-Definição:\
-é um trecho de código que permite gerar um elemento visual no navegador.
+*Definição:*\
+é um trecho de código que permite gerar um elemento visual no navegador.	
 
 #### ELEMENTO HTML
 
@@ -65,7 +65,7 @@ Definição:\
 
 #### ATRIBUTOS 
 
-Definição:\
+*Definição:*\
 Característica que queremos modificar de uma tag. Costuma ter vários valores ( característica que vamos modificar).
 
 `atributo="valor"` atributo recebe o valor (ref: [Gustavo Guanabara](https://www.youtube.com/watch?v=rsFCVjr5yxc))
@@ -178,7 +178,7 @@ importante para o posicionamento em buscadores.
 </ul>
 ```
 
-*Listas aninhadas:*\
+*Listas aninhadas:*
 ```html
 <ul>
 	<li>
@@ -194,7 +194,7 @@ importante para o posicionamento em buscadores.
 ```
 
 *Atributos das listas:*\
-`type=""` permite alterar o tipo de marcador de cada lista.
+`type=""` permite alterar o tipo de marcador de cada lista.\
 `start=""` permite definir por qual número queremos que a lista comece.
 
 ```html
