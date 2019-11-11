@@ -1,7 +1,7 @@
 # HTML + CSS
 
-[Aula 28/10](#aula28out)\
-[Aula 30/10](#aula30out)\
+[HTML](#aulaHTML)\
+[CSS](#aulaCSS)\
 **[Estudos Extras](#estudosExtras)**\
 **[Anotações de Aula](#anotacoesAula)**
 
@@ -14,9 +14,9 @@
 
 ---
 
-<div id="aula28out"></div>
+<div id="aulaHTML"></div>
 
-## Aula 28/10
+## HTML
 
 Ordem de aula:
 1. Analisamos o site da [UOL](https://www.uol.com.br/) através do Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools?hl=pt-br)
@@ -212,13 +212,58 @@ importante para o posicionamento em buscadores.
 
 <div id="aula30out"></div>
 
-## Aula 30/10
+## CSS
 
-### CSS
+### CSS (Cascading Style Sheets)
+
+Folhas de estilo em cascata São compostas por: **REGRAS**, **SELETORES** e **DECLARAÇÕES**.
+
+Ordem da aula:
+1. O professor usou um plug-in que desativa o CSS da página na web para nos mostrar o site do facebook sem o CSS, para que vissemos o sua função junto ao HTML.
 
 [Especificidade, herança e efeito cascata](https://medium.com/emanuelg-blog/entendendo-a-preced%C3%AAncia-de-estilo-em-css-especificidade-heran%C3%A7a-e-efeito-cascata-a437c4929173)
 
-**Estilos: Externo, Interno e Inline**
+As **folhas de estilo** servem para **estilizar** o nosso conteúdo HTML. O CSS permite alterar cores, planos de fundo, tipografias, alturas, larguras, entre outros e também permite gerar animações e transições.
+
+Há três métodos para vincular estilos CSS a um documento HTML:\
+
+**Externo `<link/>`**\
+Podemos codificar estilos em um arquivo a parte. Essa forma exige que vinculemos o arquivo externo com o arquivo html que será estilizado.
+
+```html
+<head>
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+```
+
+**Interno `<style> … </style>`**\
+Podemos codificar estilos dentro de um elemento `<style>` que reside, preferencialmente, dentro do `<head>`.
+
+```html
+<head>
+	<style>
+	p {
+		text-align: center;
+		color: grey;
+	}
+	</style>
+</head>
+```
+
+**Inline `<p style="propriedade: valor">...</p>`** \
+Podemos codificar estilos dentro um atributo *style* que reside na tag do elemento que se deseja estilizar.
+
+```html
+<p style="text-align: justify">
+Peço perdão aos que amo e sigo em busca de um sorriso ou um afago,
+transformando em palavras o gosto ácido que deixei pelo caminho, e
+transferindo meu afeto às cicatrizes recém-empossadas de sua nova
+capa. Faço minhas as palavras dos antigos profetas, tentando ser mais
+gentil com quem nunca demonstrou tanta simpatia ou mesmo por quem
+menosprezou minha continência sincera depois de uma batalha
+sangrenta.
+</p>
+```
 
 [Diferença entre estilos CSS](https://www.hostinger.com.br/tutoriais/diferenca-entre-estilos-css/)
 
@@ -232,7 +277,27 @@ Ordem de precedência:\
 2 Declarações do desenvolvedor com !important\
 1 Declarações do usuário com !important
 
+**Regra de CSS:**
+
+Uma regra de CSS é um conjunto de instruções que se aplicam a um determinado elemento para estilizá-lo.
+
+```css
+seletor {
+    propriedade: valor; <!-- o valor especifica o comportamento da propriedade -->
+    propriedade: valor;
+    propriedade: valor;
+}
+
+body {
+	background-color: #00ff00;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+```
+
 **Seletores**
+
 * Básicos: 
 	- tipo > `<tag>`
 	- classe > `.classe`
@@ -256,16 +321,25 @@ Especificidade dos seletores:\
 2 Seletores id\
 1 Estilo inline
 
-**Regra de CSS:**
-```
-seletor {
-    propriedade: valor;
-    propriedade: valor;
-    propriedade: valor;
-}
-```
+**Propriedades**
 
-*CONTINUAÇÃO DA AULA EM 01/11*
+Algumas propriedades e seus valores:\
+`font-family: sans-serif;` permite escolher a família tipográfica que queremos usar.\
+[Google Fonts](https://fonts.google.com/)\
+[Font Squirrel](https://www.fontsquirrel.com/)
+
+`font-size: 13px;` permite definir o tamanho da fonte. Recebe um valor numérico acompanhado da unidade de medida. As unidades de medida mais comuns são px, em e rem.\
+[Guia de unidades CSS - Alura](https://www.alura.com.br/artigos/guia-de-unidades-no-css)
+
+`font-weight: normal;` define a espessura da fonte. O valor bold se refere a uma
+fonte em negrito.\
+`font-style: italic;` define o estilo da fonte. O valor italic se refere a uma fonte
+em itálico.\
+`text-align: left;` permite definir o alinhamento do texto. O valor padrão para
+todas as etiquetas é left.\
+`text-decoration: none;` permite escolher um tipo de decoração para o texto. O valor
+padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`\
+`line-height: 21px;`  permite definir o espaçamento entre linhas de um texto. Recebe um valor numérico acompanhado da unidade de medida. Tem relação direta com a propriedade font-size.
 
 ---
 
