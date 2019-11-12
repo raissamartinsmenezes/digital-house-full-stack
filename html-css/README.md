@@ -1,6 +1,13 @@
 # HTML + CSS
 
 [HTML](#aulaHTML)\
+[Elemento HTML](#elemento-html)
+[Atributos](#atributos)
+[Estrutura básica do HTML](#estrutura-basica-do-html)
+[Elemento HTML](#elemento-html)
+[Elemento HTML](#elemento-html)
+[Elemento HTML](#elemento-html)
+	
 [CSS](#aulaCSS)\
 **[Estudos Extras](#estudosExtras)**\
 **[Anotações de Aula](#anotacoesAula)**
@@ -11,7 +18,6 @@
 
 ## HTML
 
-Ordem de aula:
 1. Analisamos o site da [UOL](https://www.uol.com.br/) através do Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools?hl=pt-br)
 2. Abrimos a aba *Elements* e inspecionamos os elementos `<html> <head> <body>`
 3. Ainda na aba *Elements* o professor explicou sobre os **atributos** e sua sintaxe
@@ -143,7 +149,7 @@ SEO é o conjunto de estratégias empregadas para potencializar e melhorar o pos
 
 #### TAGS
 
-**Meta tags**
+##### Meta tags
 
 Como suas informações vem por meio de atributos, ela não precisa de fechamento.
 
@@ -156,7 +162,7 @@ meta tag de responsividade:\
 meta tag para compatibilidade back-end:\
 `<meta http-equiv="X-UA-Compatible" content="ie=edge">`
 
-**Elementos de cabeçalho**
+##### Elementos de cabeçalho
 
 Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e `<h6>` é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`. `<h1>` é uma tag semântica que permite gerar títulos e subtítulos. São muito
 importante para o posicionamento em buscadores.
@@ -176,7 +182,7 @@ importante para o posicionamento em buscadores.
 
 [Lorem Ipsum](https://br.lipsum.com/)
 
-**Elementos de listas**
+##### Elementos de listas
 
 *Listas ordenadas:*\
 [`<ol>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol)
@@ -229,7 +235,7 @@ importante para o posicionamento em buscadores.
 <ul type="square">...</ul>
 ```
 
-**Elemento `<link/>`**
+##### Elemento link
 
 A tag `<a>` é usada para definir o destino ou a origem de um **link**.
 
@@ -259,9 +265,9 @@ https://digitalhouse.com
 2. Caminho relativo\
 ../images/teaser.jpg\
 ./images/teaser.jpg\
-images/teaser.
+images/teaser.jpg
 
-**Elemento imagem**
+##### Elemento imagem
 
 As imagens não são inseridas, apenas invocadas!
 
@@ -271,7 +277,7 @@ As imagens não são inseridas, apenas invocadas!
 `width=""` largura (não obrigatório).\
 `height=""` altura (não obrigatório).
 
-**Elemento video**
+##### Elemento video
 
 ```html
 <video width="480" controls loop autoplay poster="video.jpg">
@@ -290,7 +296,7 @@ As imagens não são inseridas, apenas invocadas!
 `<source src="video.mp4" type="video/mp4">` caminho para 3 opções do mesmo video em formatos diferentes.\
 `<source src="video.mp4" type="video/mp4">` texto para ser exibido caso o navegador ou sistema não seja compatível com vídeo HTML5 ou com os tipos de vídeo escolhidos.
 
-**Elemento audio**
+##### Elemento audio
 
 A tag `<audio>` é igual a tag `<video>`, com a diferença dos tipos de arquivo e que não existe o atributo `poster`.
 
@@ -303,7 +309,7 @@ A tag `<audio>` é igual a tag `<video>`, com a diferença dos tipos de arquivo 
 </audio>
 ```
 
-**Formulários**
+##### Formulários
 
 Formulários são sistemas para capturar dados. 
 
@@ -373,7 +379,7 @@ tag `<button>`
 <button type="button">Outra ação</button>
 ```
 
-**Tipos de displays dos elementos HTML**
+#### TIPOS DE DISPLAY
 
 * display 
 	- inline > define um elemento com comportamento de linha. Não recebe algumas propriedades do modelo de caixa. 
