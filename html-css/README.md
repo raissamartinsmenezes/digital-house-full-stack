@@ -1,12 +1,14 @@
 # HTML + CSS
 
 [HTML](#aulaHTML)\
-[Elemento HTML](#elemento-html)
-[Atributos](#atributos)
-[Estrutura básica do HTML](#estrutura-basica-do-html)
-[Elemento HTML](#elemento-html)
-[Elemento HTML](#elemento-html)
-[Elemento HTML](#elemento-html)
+- [Elemento HTML](#elemento-html)
+- [Atributos](#atributos)
+- [Estrutura básica do HTML](#estrutura)
+- [Indentação](#indentacao)
+- [Hierarquia](#hierarquia)
+- [HTML Semântico](#html-semantico)
+- [Tags](#tags)
+- [Tipos de display](#tipos-de-display)
 	
 [CSS](#aulaCSS)\
 **[Estudos Extras](#estudosExtras)**\
