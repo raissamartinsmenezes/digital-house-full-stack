@@ -24,9 +24,9 @@
 
 ## HTML
 
-1. Analisamos o site da [UOL](https://www.uol.com.br/) através do Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools?hl=pt-br)
-2. Abrimos a aba *Elements* e inspecionamos os elementos `<html> <head> <body>`
-3. Ainda na aba *Elements* o professor explicou sobre os **atributos** e sua sintaxe
+1. Analisamos o site da [UOL](https://www.uol.com.br/) através do Chrome [DevTools](https://developers.google.com/web/tools/chrome-devtools?hl=pt-br);
+2. Abrimos a aba *Elements* e inspecionamos os elementos `<html></html> | <head></head> | <body></body>`;
+3. Ainda na aba *Elements* o professor explicou sobre os **atributos** e sua sintaxe;
 4. Depois disso abrimos o bloco de notas e construimos a seguinte estrutura:
 
 ```html
@@ -53,54 +53,49 @@
 
 ### HTML (Hyper Text Markup Language)
 
-HTML é uma **linguagem de marcação** que permite estruturar e apresentar conteúdo em uma página web.
+HTML é uma **linguagem de marcação** que permite **estruturar** e apresentar conteúdo em uma página web. Composta por **TAGs** e **ATRIBUTOS** que, por sua vez, formam **ELEMENTOS**.
 
-Composta por **TAGs** e **ATRIBUTOS** que, por sua vez, formam **ELEMENTOS**.
+*Sintaxe de uma tag:* `<h1 align="center"> ... </h1>`. 
 
-*Sintaxe de uma tag:*\
-`<h1 align="center"> ... </h1>` 
-
-*Definição:*\
-é um trecho de código que permite gerar um elemento visual no navegador.	
+*Definição:* é um trecho de código que permite gerar um elemento visual no navegador.	
 
 #### ELEMENTO HTML
 
-É considerado um **elemento HTML** quando ele é formado por uma tag de abertura e outra de fechamento e o que está contido nela (seu **conteúdo**).
+É considerado um **elemento HTML** quando ele é formado por uma tag de **abertura** e outra de **fechamento** e o que está contido nela (seu **conteúdo**).
 
-`<body>` tag de abertura\
-`</body>` tag de fechamento
+`<body>` > tag de abertura.\
+`</body>` > tag de fechamento.
 
 #### ATRIBUTOS 
 
-*Definição:*\
-Característica que queremos modificar de uma tag. Costuma ter vários valores ( característica que vamos modificar).
+*Definição:* característica que queremos modificar de uma tag. Costuma ter vários valores.
 
-`atributo="valor"` atributo recebe o valor (ref: [Gustavo Guanabara](https://www.youtube.com/watch?v=rsFCVjr5yxc))
+`atributo="valor"` > atributo recebe o valor (ref: [Gustavo Guanabara](https://www.youtube.com/watch?v=rsFCVjr5yxc)).
 
 Nem todo atributo precisa de valor!
 
-Alguns atributos podem ser utilizados em qualquer tag HTML, esses atributos são chamados globais, 4 deles são: `id=""`, `class=""`, `title=""` e `style=""`.
+Alguns atributos podem ser utilizados em qualquer tag HTML, esses **atributos são chamados globais**, 4 deles são: `id=""`, `class=""`, `title=""` e `style=""`.
 
-**Atributo `charset=""`**
+##### Atributo `charset=""`
 
-`charset="utf-8"` atributo **conjunto de caracteres** com valor **UTF-8 (8-bit Unicode Transformation Format)**, este valor é um esquema de codificação *(character encoding)* que basicamente mapeia os **bits** (zeros e uns) em **caracteres**.
+`charset="utf-8"` > atributo **conjunto de caracteres** com valor **UTF-8 (8-bit Unicode Transformation Format)**, este valor é um esquema de codificação *(character encoding)* que basicamente mapeia os **bits** (zeros e uns) em **caracteres**.
 
-O atributo charset permite definir a codificação de caracteres a ser usada. Embora não seja obrigatório, ele deve ser incluído em qualquer documento HTML por dois motivos principais:\
-1. Para evitar a exibição incorreta em alguns navegadores
-2. Para seguir as convenções e padrões da W3C
+O atributo charset permite definir a codificação de caracteres a ser usada. Embora não seja obrigatório, ele deve ser incluído em qualquer documento HTML por dois motivos principais:
+1. Para evitar a exibição incorreta em alguns navegadores;
+2. Para seguir as convenções e padrões da W3C.
 
 [Unicode e UTF-8](https://www.ime.usp.br/~pf/algoritmos/apend/unicode.html)
 
-**Atributo `rel=""`**
+##### Atributo `rel=""`
 
-`rel=""` atributo usado apenas quando o `href=""` é referenciado, utilizado principalmente em se trantando de performance de SEO. Usada para atribuir uma relação entre o documento atual e o linkado pelo `href=""`.
+`rel=""` > atributo usado apenas quando o `href=""` é referenciado, utilizado principalmente em se trantando de performance de **SEO**. Usada para atribuir uma relação entre o documento atual e o linkado pelo `href=""`.
 
 [Atributo `rel=""` e seus valores](https://ferramentasseo.club/rel-nofollow-noreferrer-noopener-external)\
 [Atributo `rel=""` - W3C](https://www.w3schools.com/TAGS/att_a_rel.asp)
 
-**Atributo `title=""`**
+##### Atributo `title=""`
 
-`title=""` atributo que cria uma caixinha de título e pode ser usado com qualquer tag, é uma tag importante para rankeamento de SEO.
+`title=""` > atributo que cria uma caixinha de título e pode ser usado com qualquer tag, é uma tag **importante para rankeamento de SEO**.
 
 <div id="estrutura"></div>
 
@@ -110,7 +105,7 @@ O atributo charset permite definir a codificação de caracteres a ser usada. Em
 <!DOCTYPE html>
 	<html>
 		<head>
-		<meta charset=”utf-8”>
+		<meta charset="utf-8">
 		<title> Meu site </title>
 </head>
 <body>
@@ -121,11 +116,11 @@ O atributo charset permite definir a codificação de caracteres a ser usada. Em
 
 #### INDENTAÇÃO
 
-A [indentação](https://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o) de código é empregada na maioria das linguagens de programação com o objetivo de **organizar/estruturar** o **código/algoritmo**, facilitando em consequência disso a **legibilidade do código**, ou seja, tornar a interpretação do código mais fácil. Além disso,é usada para **definir a hierarquia** entre as partes do código.
+A [indentação](https://pt.wikipedia.org/wiki/Indenta%C3%A7%C3%A3o) de código é empregada na maioria das linguagens de programação com o objetivo de **organizar/estruturar** o **código/algoritmo**, facilitando em consequência disso a **legibilidade do código**, ou seja, tornar a interpretação do código mais fácil. Além disso, é usada para **definir a hierarquia** entre as partes do código.
 
 #### HIERARQUIA
 
-Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará dentro de seu pai, portanto ele será filho, ele também poderá ter irmão, se outros elementos estiverem no mesmo nível que ele.
+Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará dentro de seu pai, portanto ele será filho, ele também poderá ser irmão, se outros elementos estiverem no mesmo nível que ele.
 
 ```html
 <body> <!-- tag de abertura e pai de <h1> e <p> -->
@@ -142,40 +137,37 @@ SEO é o conjunto de estratégias empregadas para potencializar e melhorar o pos
 
 [Elementos semânticos](https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065)
 
-`<em>` itálico semântico\
-`<strong>` ênfase semântica\
-`<mark>` texto que deverá ser realçado com fundo amarelo\
-`<cite>` usada para citações\
-`<abbr title="Wolrd Wide Web Consortium">W3C (Abreviação)</abbr>` para mostrar o significado das abreviações
+`<em></em>` > itálico semântico.\
+`<strong></strong>` > ênfase semântica.\
+`<mark></mark>` > texto que deverá ser realçado com fundo amarelo.\
+`<cite></cite>` > usada para citações.\
+`<abbr title="Wolrd Wide Web Consortium">W3C (Abreviação)</abbr>` > para mostrar o significado das abreviações.
 
 * tags semânticas 
-	- `<span>`
-	- `<div>`
-	- `<pre>` mais usado no **php**
-	- `<section>` seção de conteúdo monotemático
-	- `<article>` informações dentro de uma seção
-	- `<header>` cabeçalho do conteúdo ou de um documento
-	- `<footer>` rodapé do conteúdo ou de um documento
+	- `<span></span>` > quando queremos selecionar apenas um pedaço do parágrafo;
+	- `<div></div>` > caixa genérica;
+	- `<pre></pre>` > mais usado no **php**;
+	- `<section></section>` > seção de conteúdo monotemático;
+	- `<article></article>` > informações dentro de uma seção;
+	- `<header></header>` > cabeçalho do conteúdo ou de um documento;
+	- `<footer></footer>` > rodapé do conteúdo ou de um documento.
 
 #### TAGS
 
 ##### Meta tags
 
-Como suas informações vem por meio de atributos, ela não precisa de fechamento.
+Como suas informações vem por meio de **atributos**, ela **não precisa de fechamento**.
 
 [Elemento `<meta>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta)\
 [`<meta>` TAGS](https://www.chiefofdesign.com.br/meta-tags/)
 
-meta tag de responsividade:\
-`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+meta tag de responsividade > `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 
-meta tag para compatibilidade back-end:\
-`<meta http-equiv="X-UA-Compatible" content="ie=edge">`
+meta tag para compatibilidade back-end > `<meta http-equiv="X-UA-Compatible" content="ie=edge">`
 
 ##### Elementos de cabeçalho
 
-Elementos de cabeçalho são implementados em seis níveis, `<h1>` é o mais importante e `<h6>` é o de menor importância, ou seja elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1>` no meu `<html>`. `<h1>` é uma tag semântica que permite gerar títulos e subtítulos. São muito
-importante para o posicionamento em buscadores.
+Elementos de cabeçalho são implementados em seis níveis, `<h1></h1>` é o mais importante e `<h6></h6>` é o de menor importância, ou seja, elas não definem o tamanho da fonte e sim a **importância**. Posso utilizar apenas **um** `<h1></h1>` no meu `<html></html>`. A tag de títulos e subtítulos é muito importante para o posicionamento em buscadores.
 
 ```html
 <h1> Título principal </h1>
@@ -186,9 +178,9 @@ importante para o posicionamento em buscadores.
 <h6> Agora sim, o último </h6>
 ```
 
-`<p></p>` tag para construção de parágrafo
-`</br>` só pode ser usado para quebra de linhas dentro dos parágrafos
-`<hr>` self-close tag para criar a linha de quebra de conteúdo
+`<p></p>` > tag para construção de parágrafo.
+`</br>` > só pode ser usado para quebra de linhas dentro dos parágrafos.
+`<hr>` > self-close tag para criar a linha de quebra de conteúdo.
 
 [Lorem Ipsum](https://br.lipsum.com/)
 
@@ -204,6 +196,7 @@ importante para o posicionamento em buscadores.
 	<li>Item da lista</li>
 </ol>
 ```
+
 *Listas não ordenadas:*\
 [`<ul>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ul)
 
@@ -216,6 +209,7 @@ importante para o posicionamento em buscadores.
 ```
 
 *Listas aninhadas:*
+
 ```html
 <ul>
 	<li>
@@ -231,8 +225,8 @@ importante para o posicionamento em buscadores.
 ```
 
 *Atributos das listas:*\
-`type=""` permite alterar o tipo de marcador de cada lista.\
-`start=""` permite definir por qual número queremos que a lista comece.
+`type=""` > permite alterar o tipo de marcador de cada lista.\
+`start=""` > permite definir por qual número queremos que a lista comece.
 
 ```html
 <ol type="1">...</ol>
@@ -247,7 +241,7 @@ importante para o posicionamento em buscadores.
 
 ##### Elemento link
 
-A tag `<a>` é usada para definir o destino ou a origem de um **link**.
+A tag `<a></a>` é usada para definir o destino ou a origem de um **link**.
 
 *Externos*\
 `<a href="http://google.com" target="_blank">Ir para o Google</a>`
@@ -264,7 +258,7 @@ A tag `<a>` é usada para definir o destino ou a origem de um **link**.
 *Telefone*\
 `<a href="tel:1145678900">Ligue já!</a>`
 
-*Caminhos relativos e absolutos*
+###### Caminhos relativos e absolutos
 
 Os links de internet são formados por uma série de caminhos (também conhecidos pelo termo em inglês *path*). O caminho indica o endereço até onde o navegador deve ir quando o usuário clica em um link. Existem dois tipos de caminhos diferentes:
 
@@ -281,11 +275,13 @@ images/teaser.jpg
 
 As imagens não são inseridas, apenas invocadas!
 
-`<img src="" alt="" width="" height=""/>`\
-`src=""` caminho / origem do arquivo de imagem.\
-`alt=""` descrição da imagem/SEO.\
-`width=""` largura (não obrigatório).\
-`height=""` altura (não obrigatório).
+tag de imagem:\
+`<img src="" alt="" width="" height=""/>` 
+
+`src=""` > caminho / origem do arquivo de imagem.\
+`alt=""` > descrição da imagem/SEO.\
+`width=""` > largura (não obrigatório).\
+`height=""` > altura (não obrigatório).
 
 ##### Elemento video
 
@@ -298,17 +294,23 @@ As imagens não são inseridas, apenas invocadas!
 </video>
 ```
 
-`width=""` largura do vídeo, funciona igual as imagens. Também pode usar em conjunto com o atributo `height=""` altura.\
-`controls` especifica se o controles do vídeo (botão de pause, play...) estarão visíveis na tela.\
-`loop` especifica se o vídeo deve repetir do início após terminar.\
-`autoplay` especifica se o vídeo deve rodar automaticamente assim que carregar a página.\
-`poster="video.jpg"` endereço da imagem que vai aparecer no lugar do vídeo enquanto ele está sendo carregado até apertar play.\
-`<source src="video.mp4" type="video/mp4">` caminho para 3 opções do mesmo video em formatos diferentes.\
+`width=""` largura do vídeo, funciona igual as imagens. Também pode usar em conjunto com o atributo `height=""` altura.
+
+`controls` especifica se o controles do vídeo (botão de pause, play...) estarão visíveis na tela.
+
+`loop` especifica se o vídeo deve repetir do início após terminar.
+
+`autoplay` especifica se o vídeo deve rodar automaticamente assim que carregar a página.
+
+`poster="video.jpg"` endereço da imagem que vai aparecer no lugar do vídeo enquanto ele está sendo carregado até apertar play.
+
+`<source src="video.mp4" type="video/mp4">` caminho para 3 opções do mesmo video em formatos diferentes.
+
 `<source src="video.mp4" type="video/mp4">` texto para ser exibido caso o navegador ou sistema não seja compatível com vídeo HTML5 ou com os tipos de vídeo escolhidos.
 
 ##### Elemento audio
 
-A tag `<audio>` é igual a tag `<video>`, com a diferença dos tipos de arquivo e que não existe o atributo `poster`.
+A tag `<audio></audio>` é igual a tag `<video></video>`, com a diferença dos tipos de arquivo e que no elemento audio, não existe o atributo `poster`.
 
 ```html
 <audio width="480" controls loop autoplay>
@@ -323,22 +325,25 @@ A tag `<audio>` é igual a tag `<video>`, com a diferença dos tipos de arquivo 
 
 Formulários são sistemas para capturar dados. 
 
-- form tag > `<form action="script.php" method="post">...</form>`
-`action="script.php"` os dados que eu preenchi no formulário vão para este arquivo\ 
-`method="post"` get não usamos para informações sensíveis e sim o post, pois esses dados não aparecerão na url\
-`method="get"` envia as informações pela url\
+- Form tag > `<form action="script.php" method="post">...</form>`
 
-- input > tag `<input type="text" name="usuario" value="" required/>`
+`action="script.php"` > os dados que eu preenchi no formulário vão para este arquivo.
+
+`method="post"` > get não usamos para informações sensíveis e sim o post, pois esses dados não aparecerão na url.
+
+`method="get"` > envia as informações pela url.
+
+- Input tag > `<input type="text" name="usuario" value="" required/>`
 
 A tag `<input>` especifica um campo de entrada no qual o usuário pode inserir dados. Um campo de entrada pode variar de várias maneiras, dependendo do atributo `type=""`. O atributo type é responsável por dizer o tipo de campo de informação e podemos ter o alguns tipo como: text, email e password.
 
-`name="usuario` o atributo name liga o front-end com o back-end, se eu não tenho o nome desse campo ele não existe no back-end. O atributo *name* é responsável por nomear o campo, adicionando como se fosse uma etiqueta ao input. Será muito importante para processar as informações do formulário. Deverá ser preenchido sem utilizar caracteres especiais.
+`name="usuario` > o atributo name liga o front-end com o back-end, se eu não tenho o nome desse campo ele não existe no back-end. O atributo *name* é responsável por nomear o campo, adicionando como se fosse uma etiqueta ao input. Será muito importante para processar as informações do formulário. Deverá ser preenchido sem utilizar caracteres especiais.
 
-`value=""` o atributo *value* é responsável por especificar o valor do input, uma vez que é o usuário que irá informar esse valor, este atributo fica vazio. Mas em determinadas situações podemos utilizar para colocar pré-informações.
+`value=""` > o atributo *value* é responsável por especificar o valor do input, uma vez que é o usuário que irá informar esse valor, este atributo fica vazio. Mas em determinadas situações podemos utilizar para colocar pré-informações.
 
-`required` o atributo required é responsável por especificar se esse campo é obrigatório. Este atributo é **OPCIONAL**.
+`required` > o atributo required é responsável por especificar se esse campo é obrigatório. Este atributo é **OPCIONAL**.
 
-`type="radio"` e `type="checkbox"`
+`type="radio"` e `type="checkbox"` abaixo:
 
 ```html
 <input type="radio" name="estado_civil" value="Solteiro">
@@ -348,11 +353,11 @@ A tag `<input>` especifica um campo de entrada no qual o usuário pode inserir d
 <input type="checkbox" name="hobbies" value="Música">
 ```
 
-`<input type="radio" name=cidade>` quando o input for do tipo radio e estiver relacionado a um bloco específico, por exemplo quando quero capturar uma cidade de opções de cidade, se todos os inputs de opção não estiverem relacionados com o mesmo `name="cidade"`, não será possível selecionar apenas uma opção dentre várias.\
+`<input type="radio" name=cidade>` > quando o input for do tipo radio e estiver relacionado a um bloco específico, por exemplo quando quero capturar uma cidade de opções de cidade, se todos os inputs de opção não estiverem relacionados com o mesmo `name="cidade"`, não será possível selecionar apenas uma opção dentre várias.
 
-`placeholder="user@email.com"` o atributo placeholder permite que coloquemos um texto que servirá de ajuda para o usuário preencher o campo com um exemplo do valor esperado. Esse valor será apagado ao primeiro caractere inserido pelo usuário no campo.
+`placeholder="user@email.com"` > o atributo placeholder permite que coloquemos um texto que servirá de ajuda para o usuário preencher o campo com um exemplo do valor esperado. Esse valor será apagado ao primeiro caractere inserido pelo usuário no campo.
 
-`<label for="idElemento"></label>` é importante conectar o label ao `<input id="idElemento">` através do id por questões de acessibilidade, pois sem essa conexão o usuário só poderá clicar na bolinha e com ela, se ele clicar no nome automaticamente a bolinha será selecionada.
+`<label for="idElemento"></label>` > é importante conectar o label ao `<input id="idElemento">` através do id por questões de acessibilidade, pois sem essa conexão o usuário só poderá clicar na bolinha e com ela, se ele clicar no nome automaticamente a bolinha será selecionada.
 
 Lista suspensa, também chamado de combobox (exibe uma caixa de texto combinada com um ListBox, que permite ao usuário selecionar itens da lista ou inserir um novo valor.), é utilizado para criar campos de múltipla escolha com caixa e lista.
 
@@ -364,7 +369,7 @@ Lista suspensa, também chamado de combobox (exibe uma caixa de texto combinada 
 </select>
 ```
 
-`<optgroup>` é usado para agrupar opções similares dentro de um **dropdown**.
+`<optgroup></outgroup>` > é usado para agrupar opções similares dentro de um **dropdown**.
 
 ```html
 <select name="país"> 
@@ -376,12 +381,15 @@ Lista suspensa, também chamado de combobox (exibe uma caixa de texto combinada 
 </select>
 ```
 
-`<textarea name="mensagem">...</textarea>` campo para escrever várias linhas de texto. Usado geralmente para a opção "sua mensagem" em um formulário.\
-`<textarea name="" id="" cols="30" rows="10">` para definir tamanho da caixa podem ser usados os atributos `cols=""` e `rows=""`\
-`<textarea name="" id="" maxlength="255">` o atibuto `maxlength="255"` define o número de caracteres máximos da caixa de texto.\
-`resize: none;` essa propriedade define se um elemento pode ser redimensionado ou não. Comumente utilizado na tag `<textarea>` e possue os seguintes valores: both, horizontal e vertical.
+`<textarea name="mensagem">...</textarea>` > campo para escrever várias linhas de texto. Usado geralmente para a opção "sua mensagem" em um formulário.
 
-tag `<button>`
+`<textarea name="" id="" cols="30" rows="10">` > para definir tamanho da caixa podem ser usados os atributos `cols=""` e `rows=""`.
+
+`<textarea name="" id="" maxlength="255">` > o atibuto `maxlength="255"` define o número de caracteres máximos da caixa de texto.
+
+`resize: none;` > essa propriedade define se um elemento pode ser redimensionado ou não. Comumente utilizado na tag `<textarea>` e possue os seguintes valores: both, horizontal e vertical.
+
+- Tag `<button>`
 
 ```html
 <button type="submit">Enviar</button>
@@ -391,10 +399,10 @@ tag `<button>`
 
 #### TIPOS DE DISPLAY
 
-* display 
-	- inline > define um elemento com comportamento de linha. Não recebe algumas propriedades do modelo de caixa. 
-	- block > define um elemento comcomportamento de bloco. Recebe facilmente propriedades do modelo de caixa.
-	- inline-block > define um elemento com comportamento de semibloco, recebe facilmente propriedades do modelo de caixa. Também tem propriedades do elemento de linha.
+* Display 
+	- inline > define um elemento com comportamento de linha. Não recebe algumas propriedades do modelo de caixa; 
+	- block > define um elemento comcomportamento de bloco. Recebe facilmente propriedades do modelo de caixa;
+	- inline-block > define um elemento com comportamento de semibloco, recebe facilmente propriedades do modelo de caixa. Também tem propriedades do elemento de linha;
 	- none > oculta visualmente um elemento sem eliminá-lo da estrutura de HTML. O efeito é apenas visual.
 
 | display | padding | margin | width/height | quebra de linha |
@@ -406,11 +414,9 @@ tag `<button>`
 
 ---
 
-<div id="aula30out"></div>
+<div id="aulaCSS"></div>
 
 ## CSS
-
-<div id="aulaCSS"></div>
 
 ### CSS (Cascading Style Sheets)
 
@@ -539,13 +545,17 @@ Algumas propriedades e seus valores:
 [Guia de unidades CSS - Alura](https://www.alura.com.br/artigos/guia-de-unidades-no-css)
 
 `font-weight: normal;` define a espessura da fonte. O valor bold se refere a uma
-fonte em negrito.\
+fonte em negrito.
+
 `font-style: italic;` define o estilo da fonte. O valor italic se refere a uma fonte
-em itálico.\
+em itálico.
+
 `text-align: left;` permite definir o alinhamento do texto. O valor padrão para
-todas as etiquetas é left.\
+todas as etiquetas é left.
+
 `text-decoration: none;` permite escolher um tipo de decoração para o texto. O valor
-padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`\
+padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`.
+
 `line-height: 21px;`  permite definir o espaçamento entre linhas de um texto. Recebe um valor numérico acompanhado da unidade de medida. Tem relação direta com a propriedade font-size.
 
 ##### Cores
@@ -571,10 +581,10 @@ no-repeat | repeat-x | repeat-y
 `background-position: x y;`\
 x = left | center | right | length(px,%...)\
 y = top | center | bottom | length(px,%...)\
-A utilização de medidas especificas é só para contornar pequenas movimentações da imagem
+A utilização de medidas especificas é só para contornar pequenas movimentações da imagem.
 
 `background-attachment: scroll;`\
-fixed > a imagem fica fixa no fundo e o conteúdo rola com a barra de rolagem 
+fixed > a imagem fica fixa no fundo e o conteúdo rola com a barra de rolagem. 
 
 `background-color: #F2F2F2;`
 
@@ -673,26 +683,22 @@ elemento {
 
 - Relative
 
-*Definição:* \
-Permite mover um elemento da posição original para uma nova posição, usando como referência sua própria posição "inicial". 
+*Definição:* permite mover um elemento da posição original para uma nova posição, usando como referência sua própria posição "inicial". 
 
 - Absolute
 
-*Definição:* \
-Permite mover um elemento da posição original para uma nova posição, usando como referência o elemento pai. 
+*Definição:* permite mover um elemento da posição original para uma nova posição, usando como referência o elemento pai. 
 
 - Static
 
-*Definição:* \
-Amarra, prega e chumba o elemento na sua posição natural.Não permite que sua posição seja alterada por css.
+*Definição:* amarra, prega e chumba o elemento na sua posição natural.Não permite que sua posição seja alterada por css.
 
 - `position: fixed;`
 - `position: sticky;`
 
 ##### Z-index
 
-*Definição:* \ 
-Permite mudar a ordem das "camadas" dentro de um documento HTML. Só funciona se o elemento tiver posicionamento diferente de **STATIC**.
+*Definição:* permite mudar a ordem das "camadas" dentro de um documento HTML. Só funciona se o elemento tiver posicionamento diferente de **STATIC**.
 
 ##### Flexbox
 
