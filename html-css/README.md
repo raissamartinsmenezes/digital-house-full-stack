@@ -1,6 +1,6 @@
 # HTML + CSS
 
-[HTML](#aulaHTML)\
+[HTML](#aulaHTML)
 - [Elemento HTML](#elemento-html)
 - [Atributos](#atributos)
 - [Estrutura básica do HTML](#estrutura)
@@ -10,7 +10,11 @@
 - [Tags](#tags)
 - [Tipos de display](#tipos-de-display)
 	
-[CSS](#aulaCSS)\
+[CSS](#aulaCSS)
+- [Regra de CSS](#regra-de-css)
+- [Seletores](#seletores)
+- [Propriedades](#propriedades)
+
 **[Estudos Extras](#estudosExtras)**\
 **[Anotações de Aula](#anotacoesAula)**
 
@@ -98,6 +102,8 @@ O atributo charset permite definir a codificação de caracteres a ser usada. Em
 
 `title=""` atributo que cria uma caixinha de título e pode ser usado com qualquer tag, é uma tag importante para rankeamento de SEO.
 
+<div id="estrutura"></div>
+
 #### ESTRUTURA BÁSICA DO HTML
 
 ```html
@@ -127,6 +133,8 @@ Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará de
     <p><p> <!-- filho de body e irmão de <h1> -->
 </body> <!-- tag de fechamento -->
 ```
+
+<div id="html-semantico"></div>
 
 #### HTML SEMÂNTICO 
 
@@ -402,14 +410,15 @@ tag `<button>`
 
 ## CSS
 
+<div id="aulaCSS"></div>
+
 ### CSS (Cascading Style Sheets)
 
 CSS é uma linguagem composta por **regras de estilo** com a finalidade de **estilizar** as tags html. O CSS permite alterar cores, planos de fundo, tipografias, alturas, larguras, entre outros e também permite gerar animações e transições.
 
 Folhas de estilo em cascata São compostas por: **REGRAS**, **SELETORES** e **DECLARAÇÕES**.
 
-Ordem da aula:
-1. O professor usou um plug-in que desativa o CSS da página na web para nos mostrar o site do facebook sem o CSS, para que vissemos o sua função junto ao HTML.
+- O professor usou um plug-in que desativa o CSS da página na web para nos mostrar o site do facebook sem o CSS, para que vissemos o sua função junto ao HTML.
 
 [Especificidade, herança e efeito cascata](https://medium.com/emanuelg-blog/entendendo-a-preced%C3%AAncia-de-estilo-em-css-especificidade-heran%C3%A7a-e-efeito-cascata-a437c4929173)
 
@@ -465,7 +474,7 @@ Ordem de precedência:\
 2 Declarações do desenvolvedor com !important\
 1 Declarações do usuário com !important
 
-**Regra de CSS:**
+#### REGRA DE CSS
 
 Uma regra de CSS é um conjunto de instruções que se aplicam a um determinado elemento para estilizá-lo.
 
@@ -484,7 +493,7 @@ body {
 
 ```
 
-**Seletores**
+#### SELETORES
 
 A declaração indica **a ação que deve ser realizada**, e o seletor indica **quem deve receber essa ação**.
 
@@ -516,11 +525,11 @@ Especificidade dos seletores:\
 	- **a:active** > é usado para selecionar e estilizar um link ou elemento ativo.
 	- **input:focus** > controla o “foco” nos campos de um formulário. O que for definido com esse seletor só será visível quando o cursor estiver dentro do campo.
 
-**Propriedades**
+#### PROPRIEDADES
 
-Algumas propriedades e seus valores:\
+Algumas propriedades e seus valores:
 
-**Fontes**
+##### Fontes
 
 `font-family: sans-serif;` permite escolher a família tipográfica que queremos usar.\
 [Google Fonts](https://fonts.google.com/)\
@@ -539,7 +548,7 @@ todas as etiquetas é left.\
 padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`\
 `line-height: 21px;`  permite definir o espaçamento entre linhas de um texto. Recebe um valor numérico acompanhado da unidade de medida. Tem relação direta com a propriedade font-size.
 
-**Cores**
+##### Cores
 
 - Hexadecimal > #F05331
 - RGB > rgb(240,83,49)
@@ -552,7 +561,7 @@ padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`\
 	- 0.2 = 20%
 	- 0.05 = 5%
 
-**Fundos de imagens**
+##### Fundos de imagens
 
 `background-image: url(../images/fundo.jpg);`
 
@@ -575,7 +584,7 @@ contain | length
 `background-image: url(../images/fundo.jpg);`
 `background-image: url(../images/fundo.jpg);`
 
-**width**
+##### Width
 
 Se um elemento não tiver a width declarada, ela será igual a 100% do container pai, desde que seja um bloco.
 
@@ -585,7 +594,7 @@ elemento {
 }
 ```
 
-**height**
+##### Height
 
 Se um elemento não tiver a height declarada, ela será igual à altura do conteúdo interno, seja ele um bloco ou uma linha.
 
@@ -595,11 +604,11 @@ elemento {
 }
 ```
 
-**overflow**
+##### Overflow
 
 [Propriedade overflow - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow)
 
-**padding**
+##### Padding
 
 Aumenta a área clicável e é melhor para a acessibilidade.
 
@@ -617,7 +626,7 @@ elemento {
 
 ![padding](./imagens/padding.jpg)
 
-**margin**
+##### Margin
 
 ```css
 elemento {
@@ -634,7 +643,7 @@ elemento {
 ![margin](./imagens/margin.jpg)
 ![dimensão](./imagens/dimensao.jpg)
 
-**border**
+##### Border
 
 ```css
 elemento {
@@ -649,7 +658,7 @@ elemento {
 
 ![border](./imagens/border.jpg)
 
-**box-sizing**
+##### Box-sizing
 
 *Definição:* box-sizing é a propriedade que diz a maneira como a altura e o comprimento devem ser calculados. Quando configurada para border-box, calcula-se o comprimento e a altura dos boxes, incluindo nestes os valores do preenchimento e da borda.
 
@@ -660,7 +669,7 @@ elemento {
 }
 ```
 
-#### Position
+##### Position
 
 - Relative
 
@@ -680,12 +689,12 @@ Amarra, prega e chumba o elemento na sua posição natural.Não permite que sua 
 - `position: fixed;`
 - `position: sticky;`
 
-#### Z-index
+##### Z-index
 
 *Definição:* \ 
 Permite mudar a ordem das "camadas" dentro de um documento HTML. Só funciona se o elemento tiver posicionamento diferente de **STATIC**.
 
-#### Flexbox
+##### Flexbox
 
 ```css
 elemento {
