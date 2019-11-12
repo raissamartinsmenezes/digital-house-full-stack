@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagens/dot-grid.png);
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-weight: italic;
+    text-align: center;
+}
+
+h1, h3 {
+    color: rgba(114, 4, 95, 0.6);
+}
+
+h3 {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+p, li {
+    text-align: justify;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+a {
+    color: rgb(155, 83, 1);
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.redes-sociais {
+    list-style: none;
+    display: flex;
+}
+
+.redes-sociais img {
+    width: 35px;
+}
+
+img {
+    width: 360px;
+}
+
+.imagens:hover {
+    border-radius: 20px;
+}
+
+.destaque {
+    background-color: rgb(206, 195, 47);
+    font-size: 22px;
+    line-height: 26px;
+}
+
+form input:focus {
+    background-color: plum;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: inline-block;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+section {
+    background-color: plum;
+    width: 960px;
+    margin: 0 auto;
+    border: dashed 5px purple;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* form div {
+    width: 50%;
+} */
+
+footer {
+    background-color: purple;
+    text-align: center;
+    color: white;
+}
+
+.containerB {
+    width: 300px; 
+}
+
+.containerC {
+    width: 630px; 
+}
+
+.conteudo-hobbies {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}

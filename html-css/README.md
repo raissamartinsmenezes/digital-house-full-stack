@@ -564,12 +564,14 @@ padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`.
 - RGB > rgb(240,83,49)
 - RGBA > rgba(240,83,49,0.5)
 
-`opacity: 0.5;`  permite definir o espaçamento entre linhas de um texto. Recebe um valor numérico acompanhado da unidade de medida. Tem relação direta com a propriedade font-size.\
+`opacity: 0.5;`  permite definir o espaçamento entre linhas de um texto. Recebe um valor numérico acompanhado da unidade de medida. Tem relação direta com a propriedade font-size.
 * Valores em frações:
 	- 1.0 = 100%
 	- 0.5 = 50%
 	- 0.2 = 20%
 	- 0.05 = 5%
+
+[HTML Color Codes](http://www.hexcolortool.com/)
 
 ##### Fundos de imagens
 
