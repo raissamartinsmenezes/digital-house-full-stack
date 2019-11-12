@@ -122,7 +122,24 @@ Se o elemento estiver dentro de uma tag de abertura e fechamento, ele estará de
 
 #### HTML SEMÂNTICO 
 
+SEO é o conjunto de estratégias empregadas para potencializar e melhorar o posicionamento de um site nos mecanismos de busca. E é justamente nessa otimização que entra o **HTML semântico**, isso por que o uso de determinadas tags HTML podem reforçar o significado do conteúdo de um site. Imprescindível para SEO.
+
 [Elementos semânticos](https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065)
+
+`<em>` itálico semântico\
+`<strong>` ênfase semântica\
+`<mark>` texto que deverá ser realçado com fundo amarelo\
+`<cite>` usada para citações\
+`<abbr title="Wolrd Wide Web Consortium">W3C (Abreviação)</abbr>` para mostrar o significado das abreviações
+
+* tags semânticas 
+	- `<span>`
+	- `<div>`
+	- `<pre>` mais usado no **php**
+	- `<section>` seção de conteúdo monotemático
+	- `<article>` informações dentro de uma seção
+	- `<header>` cabeçalho do conteúdo ou de um documento
+	- `<footer>` rodapé do conteúdo ou de um documento
 
 #### TAGS
 
@@ -132,6 +149,12 @@ Como suas informações vem por meio de atributos, ela não precisa de fechament
 
 [Elemento `<meta>` - MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/meta)\
 [`<meta>` TAGS](https://www.chiefofdesign.com.br/meta-tags/)
+
+meta tag de responsividade:\
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+meta tag para compatibilidade back-end:\
+`<meta http-equiv="X-UA-Compatible" content="ie=edge">`
 
 **Elementos de cabeçalho**
 
@@ -147,8 +170,9 @@ importante para o posicionamento em buscadores.
 <h6> Agora sim, o último </h6>
 ```
 
-`<p>` tag para construção de parágrafo
+`<p></p>` tag para construção de parágrafo
 `</br>` só pode ser usado para quebra de linhas dentro dos parágrafos
+`<hr>` self-close tag para criar a linha de quebra de conteúdo
 
 [Lorem Ipsum](https://br.lipsum.com/)
 
@@ -224,12 +248,12 @@ A tag `<a>` é usada para definir o destino ou a origem de um **link**.
 *Telefone*\
 `<a href="tel:1145678900">Ligue já!</a>`
 
-#### CAMINHOS RELATIVOS E ABSOLUTOS
+*Caminhos relativos e absolutos*
 
 Os links de internet são formados por uma série de caminhos (também conhecidos pelo termo em inglês *path*). O caminho indica o endereço até onde o navegador deve ir quando o usuário clica em um link. Existem dois tipos de caminhos diferentes:
 
 1. Caminho absoluto:\
-http://digitalhouse.com\
+http://digitalhouse.com \
 https://digitalhouse.com
 
 2. Caminho relativo\
@@ -257,6 +281,7 @@ As imagens não são inseridas, apenas invocadas!
 	<p>Seu navegador não é compatível com vídeo html5</p>
 </video>
 ```
+
 `width=""` largura do vídeo, funciona igual as imagens. Também pode usar em conjunto com o atributo `height=""` altura.\
 `controls` especifica se o controles do vídeo (botão de pause, play...) estarão visíveis na tela.\
 `loop` especifica se o vídeo deve repetir do início após terminar.\
@@ -277,6 +302,91 @@ A tag `<audio>` é igual a tag `<video>`, com a diferença dos tipos de arquivo 
 	<p>Seu navegador não é compatível com áudio html5</p>
 </audio>
 ```
+
+**Formulários**
+
+Formulários são sistemas para capturar dados. 
+
+- form tag > `<form action="script.php" method="post">...</form>`
+`action="script.php"` os dados que eu preenchi no formulário vão para este arquivo\ 
+`method="post"` get não usamos para informações sensíveis e sim o post, pois esses dados não aparecerão na url\
+`method="get"` envia as informações pela url\
+
+- input > tag `<input type="text" name="usuario" value="" required/>`
+
+A tag `<input>` especifica um campo de entrada no qual o usuário pode inserir dados. Um campo de entrada pode variar de várias maneiras, dependendo do atributo `type=""`. O atributo type é responsável por dizer o tipo de campo de informação e podemos ter o alguns tipo como: text, email e password.
+
+`name="usuario` o atributo name liga o front-end com o back-end, se eu não tenho o nome desse campo ele não existe no back-end. O atributo *name* é responsável por nomear o campo, adicionando como se fosse uma etiqueta ao input. Será muito importante para processar as informações do formulário. Deverá ser preenchido sem utilizar caracteres especiais.
+
+`value=""` o atributo *value* é responsável por especificar o valor do input, uma vez que é o usuário que irá informar esse valor, este atributo fica vazio. Mas em determinadas situações podemos utilizar para colocar pré-informações.
+
+`required` o atributo required é responsável por especificar se esse campo é obrigatório. Este atributo é **OPCIONAL**.
+
+`type="radio"` e `type="checkbox"`
+
+```html
+<input type="radio" name="estado_civil" value="Solteiro">
+<input type="radio" name="estado_civil" value="Casado">
+
+<input type="checkbox" name="hobbies" value="Surf">
+<input type="checkbox" name="hobbies" value="Música">
+```
+
+`<input type="radio" name=cidade>` quando o input for do tipo radio e estiver relacionado a um bloco específico, por exemplo quando quero capturar uma cidade de opções de cidade, se todos os inputs de opção não estiverem relacionados com o mesmo `name="cidade"`, não será possível selecionar apenas uma opção dentre várias.\
+
+`placeholder="user@email.com"` o atributo placeholder permite que coloquemos um texto que servirá de ajuda para o usuário preencher o campo com um exemplo do valor esperado. Esse valor será apagado ao primeiro caractere inserido pelo usuário no campo.
+
+`<label for="idElemento"></label>` é importante conectar o label ao `<input id="idElemento">` através do id por questões de acessibilidade, pois sem essa conexão o usuário só poderá clicar na bolinha e com ela, se ele clicar no nome automaticamente a bolinha será selecionada.
+
+Lista suspensa, também chamado de combobox (exibe uma caixa de texto combinada com um ListBox, que permite ao usuário selecionar itens da lista ou inserir um novo valor.), é utilizado para criar campos de múltipla escolha com caixa e lista.
+
+```html
+<select name="país"> 
+	<option value="Ar">Argentina</option>
+	<option value="Br">Brasil</option>
+	<option value="Co">Colômbia</option>
+</select>
+```
+
+`<optgroup>` é usado para agrupar opções similares dentro de um **dropdown**.
+
+```html
+<select name="país"> 
+	<optgroup label="Sul América">
+		<option value="Ar">Argentina</option>
+		<option value="Br">Brasil</option>
+		<option value="Co">Colômbia</option>
+	</optgroup>
+</select>
+```
+
+`<textarea name="mensagem">...</textarea>` campo para escrever várias linhas de texto. Usado geralmente para a opção "sua mensagem" em um formulário.\
+`<textarea name="" id="" cols="30" rows="10">` para definir tamanho da caixa podem ser usados os atributos `cols=""` e `rows=""`\
+`<textarea name="" id="" maxlength="255">` o atibuto `maxlength="255"` define o número de caracteres máximos da caixa de texto.\
+`resize: none;` essa propriedade define se um elemento pode ser redimensionado ou não. Comumente utilizado na tag `<textarea>` e possue os seguintes valores: both, horizontal e vertical.
+
+tag `<button>`
+
+```html
+<button type="submit">Enviar</button>
+<button type="reset">Excluir</button>
+<button type="button">Outra ação</button>
+```
+
+**Tipos de displays dos elementos HTML**
+
+* display 
+	- inline > define um elemento com comportamento de linha. Não recebe algumas propriedades do modelo de caixa. 
+	- block > define um elemento comcomportamento de bloco. Recebe facilmente propriedades do modelo de caixa.
+	- inline-block > define um elemento com comportamento de semibloco, recebe facilmente propriedades do modelo de caixa. Também tem propriedades do elemento de linha.
+	- none > oculta visualmente um elemento sem eliminá-lo da estrutura de HTML. O efeito é apenas visual.
+
+| display | padding | margin | width/height | quebra de linha |
+|---------|---------|--------|--------------|-----------------|
+| inline | - | - | - | - |
+| block | ✔️ | ✔️ | ✔️ | ✔️ |
+| inline-block | ✔️ | ✔️ | ✔️ | - |
+| none | - | - | - | - |
 
 ---
 
@@ -393,6 +503,11 @@ Especificidade dos seletores:\
 2 Seletores id\
 1 Estilo inline
 
+* **pseudo:seletores** > os pseudo seletores permitem controlar eventos especiais de um elemento. Eles costumam ser aplicados sobre um seletor existente.
+	- **a:hover** > controla o estado “hover” de qualquer elemento. O que for definido com esse seletor só será visível quando o cursor for posicionado sobre o elemento.
+	- **a:active** > é usado para selecionar e estilizar um link ou elemento ativo.
+	- **input:focus** > controla o “foco” nos campos de um formulário. O que for definido com esse seletor só será visível quando o cursor estiver dentro do campo.
+
 **Propriedades**
 
 Algumas propriedades e seus valores:\
@@ -429,7 +544,6 @@ padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`\
 	- 0.2 = 20%
 	- 0.05 = 5%
 
-
 **Fundos de imagens**
 
 `background-image: url(../images/fundo.jpg);`
@@ -439,10 +553,11 @@ no-repeat | repeat-x | repeat-y
 
 `background-position: x y;`\
 x = left | center | right | length(px,%...)\
-y = top | center | bottom | length(px,%...)
+y = top | center | bottom | length(px,%...)\
+A utilização de medidas especificas é só para contornar pequenas movimentações da imagem
 
 `background-attachment: scroll;`\
-fixed
+fixed > a imagem fica fixa no fundo e o conteúdo rola com a barra de rolagem 
 
 `background-color: #F2F2F2;`
 
@@ -451,6 +566,148 @@ contain | length
 
 `background-image: url(../images/fundo.jpg);`
 `background-image: url(../images/fundo.jpg);`
+
+**width**
+
+Se um elemento não tiver a width declarada, ela será igual a 100% do container pai, desde que seja um bloco.
+
+```css
+elemento {
+	width: 560px;
+}
+```
+
+**height**
+
+Se um elemento não tiver a height declarada, ela será igual à altura do conteúdo interno, seja ele um bloco ou uma linha.
+
+```css
+elemento {
+	height: 560px;
+}
+```
+
+**overflow**
+
+[Propriedade overflow - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow)
+
+**padding**
+
+Aumenta a área clicável e é melhor para a acessibilidade.
+
+```css
+elemento {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	padding-left: 40px;
+
+	/* shorthand */
+	padding: 10px 20px 30px 40px; /* a ordem importa */
+}
+```
+
+![padding](./imagens/padding.jpg)
+
+**margin**
+
+```css
+elemento {
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+
+	/* shorthand */
+	margin: 10px 20px 30px 40px; /* a ordem importa */
+}
+```
+
+![margin](./imagens/margin.jpg)
+![dimensão](./imagens/dimensao.jpg)
+
+**border**
+
+```css
+elemento {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #FF0000;
+
+	/* shorthand */
+	border: solid 2px #FF0000; /* a ordem não importa */
+	}
+```
+
+![border](./imagens/border.jpg)
+
+**box-sizing**
+
+*Definição:* box-sizing é a propriedade que diz a maneira como a altura e o comprimento devem ser calculados. Quando configurada para border-box, calcula-se o comprimento e a altura dos boxes, incluindo nestes os valores do preenchimento e da borda.
+
+```css
+elemento {
+	box-sizing: border-box;
+	/* box-sizing: content-box; > valor padrão*/
+}
+```
+
+#### Position
+
+- Relative
+
+*Definição:* \
+Permite mover um elemento da posição original para uma nova posição, usando como referência sua própria posição "inicial". 
+
+- Absolute
+
+*Definição:* \
+Permite mover um elemento da posição original para uma nova posição, usando como referência o elemento pai. 
+
+- Static
+
+*Definição:* \
+Amarra, prega e chumba o elemento na sua posição natural.Não permite que sua posição seja alterada por css.
+
+- `position: fixed;`
+- `position: sticky;`
+
+#### Z-index
+
+*Definição:* \ 
+Permite mudar a ordem das "camadas" dentro de um documento HTML. Só funciona se o elemento tiver posicionamento diferente de **STATIC**.
+
+#### Flexbox
+
+```css
+elemento {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+```
+
+`display: flex;` torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.
+
+`flex-direction: column;` define a direção dos flex itens. Por padrão ele é row (linha), por isso quando o **display: flex;** é adicionado, os elementos ficam em linha, um do lado do
+outro.
+
+`justify-content: flex-start;`alinha os itens flex no container de acordo com a direção. A propriedade só funciona se os itens atuais não ocuparem todo o container.
+
+`flex-wrap: wrap;` define se os itens devem quebrar ou não a linha. Por padrão eles não quebram linha, isso faz com que os flex itens sejam compactados além do limite do
+conteúdo.
+
+`align-items: center;` o align-items alinha os flex itens de acordo com o eixo do container. O alinhamento é diferente para quando os itens estão em colunas ou linhas.
+
+`align-content: center;` alinha as linhas do container em relação ao eixo vertical. A propriedade só funciona se existir mais de uma linha de flex-itens. Para isso o flex-wrap precisa ser wrap.
+
+`align-self: flex-end;` o align-self aceita os mesmos valores que a propriedade align-items mas alinha somente o item selecionado.
+
+[Guia completo de Flexbox - Origamid](https://origamid.com/projetos/flexbox-guia-completo/)\
+[Flexbox Froggy](https://flexboxfroggy.com/#pt-br)
 
 ---
 
@@ -472,67 +729,9 @@ contain | length
 
 <div id="anotacoesAula"></div>
 
-#### ANOTAÇÕES DA AULA 01/11
+#### ANOTAÇÕES DA AULA 
 
-`<a>` links externos e internos\
-`<a>` links âncoras, email e telefone\
-`<img src="" alt="" width="" height=""/>` **src** > para conteúdo, **alt** para descrição da imagem
 
-`background-position: 100px 100px` a utilização de medidas especificas é só para contornar pequenas movimentações da imagem\
-`background-attachment: fixed` a imagem fica fixa no fundo e o conteúdo rola com a barra de rolagem 
-
-`<em>` itálico semântico\
-`<strong>` ênfase semântica\
-`<mark>`\
-`<cite>`\
-`<abbr title="Wolrd Wide Web Consortium">W3C (Abreviação)</abbr>` para mostrar o significado das abreviações
-
-#### ANOTAÇÕES DA AULA 04/11
-
-**Formulários**
-- form
-`action="script.php"` os dados que eu preenchi no formulário vão para este arquivo\ 
-`method="post"` get não usamos para informações sensíveis e sim o post, pois esses dados não aparecerão na url\
-`method="get"` envia as informações pela url\
-
-- input
-`type="email"` tipo de validação (text - nome, email e password)\
-`name="usuario` o atributo name liga o front-end com o back-end, se eu não tenho o nome desse campo ele não existe no back-end\
-`value=""`\
-`required`\
-`type="radio"` e `type="checkbox"`\
-`placeholder="user@email.com"`\
-`<label for=""></label>` é importante conectar o label ao `<input id="">` através do id por questões de acessibilidade, pois sem essa conexão o usuário só poderá clicar na bolinha e com ela, se ele clicar no nome automaticamente a bolinha será selecionada\
-`<input type="radio" name=cidade>` quando o input for do tipo radio e estiver relacionado a um bloco específico, por exemplo quando quero capturar uma cidade de opções de cidade, se todos os inputs de opção não estiverem relacionados com o mesmo `name="cidade"`, não será possível selecionar apenas uma opção dentre várias\
-
-* pseudo:seletores 
-	- hover
-	- active
-	- input:focus
-
-#### ANOTAÇÕES DA AULA 06/11
-
-* tags semânticas 
-	- `<span>`
-	- `<div>`
-	- `<pre>` mais usado no **php**
-	- `<section>` seção de conteúdo monotemático
-	- `<article>` informações dentro de uma seção
-	- `<header>` cabeçalho do conteúdo ou de um documento
-	- `<footer>` rodapé do conteúdo ou de um documento
-
-* display 
-	- inline 
-	- block
-	- inline-block
-	- none
-
-A declaração **shorthand** `border:` não precisa seguir uma ordem, apenas o `padding:` e `margin:`\
-
-`box-sizing: border-box`\
-`box-sizing: content-box` > padrão\
-
-`padding:` aumenta a área clicável e é melhor para a acessibilidade
 
 
 
