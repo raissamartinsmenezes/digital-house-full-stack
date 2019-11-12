@@ -5,13 +5,6 @@
 **[Estudos Extras](#estudosExtras)**\
 **[Anotações de Aula](#anotacoesAula)**
 
---- 
-
-
-#### CAMINHOS RELATIVOS E ABSOLUTOS
-
-*Pesquisar!!!*
-
 ---
 
 <div id="aulaHTML"></div>
@@ -48,6 +41,8 @@ Ordem de aula:
 
 ### HTML (Hyper Text Markup Language)
 
+HTML é uma **linguagem de marcação** que permite estruturar e apresentar conteúdo em uma página web.
+
 Composta por **TAGs** e **ATRIBUTOS** que, por sua vez, formam **ELEMENTOS**.
 
 *Sintaxe de uma tag:*\
@@ -71,6 +66,8 @@ Característica que queremos modificar de uma tag. Costuma ter vários valores (
 `atributo="valor"` atributo recebe o valor (ref: [Gustavo Guanabara](https://www.youtube.com/watch?v=rsFCVjr5yxc))
 
 Nem todo atributo precisa de valor!
+
+Alguns atributos podem ser utilizados em qualquer tag HTML, esses atributos são chamados globais, 4 deles são: `id=""`, `class=""`, `title=""` e `style=""`.
 
 **Atributo `charset=""`**
 
@@ -208,6 +205,79 @@ importante para o posicionamento em buscadores.
 <ul type="square">...</ul>
 ```
 
+**Elemento `<link/>`**
+
+A tag `<a>` é usada para definir o destino ou a origem de um **link**.
+
+*Externos*\
+`<a href="http://google.com" target="_blank">Ir para o Google</a>`
+
+*Locais*\
+`<a href="contato.html">Fale conosco</a>`
+
+*Internos (Âncoras)*\
+`<a href="#bio">Biografia</a>`
+
+*E-mail*\
+`<a href="mailto:user@server.com?subject=Assunto">Fale comigo agora!</a>`
+
+*Telefone*\
+`<a href="tel:1145678900">Ligue já!</a>`
+
+#### CAMINHOS RELATIVOS E ABSOLUTOS
+
+Os links de internet são formados por uma série de caminhos (também conhecidos pelo termo em inglês *path*). O caminho indica o endereço até onde o navegador deve ir quando o usuário clica em um link. Existem dois tipos de caminhos diferentes:
+
+1. Caminho absoluto:\
+http://digitalhouse.com\
+https://digitalhouse.com
+
+2. Caminho relativo\
+../images/teaser.jpg\
+./images/teaser.jpg\
+images/teaser.
+
+**Elemento imagem**
+
+As imagens não são inseridas, apenas invocadas!
+
+`<img src="" alt="" width="" height=""/>`\
+`src=""` caminho / origem do arquivo de imagem.\
+`alt=""` descrição da imagem/SEO.\
+`width=""` largura (não obrigatório).\
+`height=""` altura (não obrigatório).
+
+**Elemento video**
+
+```html
+<video width="480" controls loop autoplay poster="video.jpg">
+	<source src="video.mp4" type="video/mp4">
+	<source src="video.ogg" type="video/ogg">
+	<source src="video.webm" type="video/webm">
+	<p>Seu navegador não é compatível com vídeo html5</p>
+</video>
+```
+`width=""` largura do vídeo, funciona igual as imagens. Também pode usar em conjunto com o atributo `height=""` altura.\
+`controls` especifica se o controles do vídeo (botão de pause, play...) estarão visíveis na tela.\
+`loop` especifica se o vídeo deve repetir do início após terminar.\
+`autoplay` especifica se o vídeo deve rodar automaticamente assim que carregar a página.\
+`poster="video.jpg"` endereço da imagem que vai aparecer no lugar do vídeo enquanto ele está sendo carregado até apertar play.\
+`<source src="video.mp4" type="video/mp4">` caminho para 3 opções do mesmo video em formatos diferentes.\
+`<source src="video.mp4" type="video/mp4">` texto para ser exibido caso o navegador ou sistema não seja compatível com vídeo HTML5 ou com os tipos de vídeo escolhidos.
+
+**Elemento audio**
+
+A tag `<audio>` é igual a tag `<video>`, com a diferença dos tipos de arquivo e que não existe o atributo `poster`.
+
+```html
+<audio width="480" controls loop autoplay>
+	<source src="audio.mp3" type="audio/mp3">
+	<source src="audio.wav" type="audio/x-wav">
+	<source src="audio.ogg" type="audio/ogg">
+	<p>Seu navegador não é compatível com áudio html5</p>
+</audio>
+```
+
 ---
 
 <div id="aula30out"></div>
@@ -216,14 +286,14 @@ importante para o posicionamento em buscadores.
 
 ### CSS (Cascading Style Sheets)
 
+CSS é uma linguagem composta por **regras de estilo** com a finalidade de **estilizar** as tags html. O CSS permite alterar cores, planos de fundo, tipografias, alturas, larguras, entre outros e também permite gerar animações e transições.
+
 Folhas de estilo em cascata São compostas por: **REGRAS**, **SELETORES** e **DECLARAÇÕES**.
 
 Ordem da aula:
 1. O professor usou um plug-in que desativa o CSS da página na web para nos mostrar o site do facebook sem o CSS, para que vissemos o sua função junto ao HTML.
 
 [Especificidade, herança e efeito cascata](https://medium.com/emanuelg-blog/entendendo-a-preced%C3%AAncia-de-estilo-em-css-especificidade-heran%C3%A7a-e-efeito-cascata-a437c4929173)
-
-As **folhas de estilo** servem para **estilizar** o nosso conteúdo HTML. O CSS permite alterar cores, planos de fundo, tipografias, alturas, larguras, entre outros e também permite gerar animações e transições.
 
 Há três métodos para vincular estilos CSS a um documento HTML:\
 
@@ -298,6 +368,8 @@ body {
 
 **Seletores**
 
+A declaração indica **a ação que deve ser realizada**, e o seletor indica **quem deve receber essa ação**.
+
 * Básicos: 
 	- tipo > `<tag>`
 	- classe > `.classe`
@@ -324,6 +396,9 @@ Especificidade dos seletores:\
 **Propriedades**
 
 Algumas propriedades e seus valores:\
+
+**Fontes**
+
 `font-family: sans-serif;` permite escolher a família tipográfica que queremos usar.\
 [Google Fonts](https://fonts.google.com/)\
 [Font Squirrel](https://www.fontsquirrel.com/)
@@ -340,6 +415,42 @@ todas as etiquetas é left.\
 `text-decoration: none;` permite escolher um tipo de decoração para o texto. O valor
 padrão para algumas tags é underline, um exemplo é a tag `<a href=""></a>`\
 `line-height: 21px;`  permite definir o espaçamento entre linhas de um texto. Recebe um valor numérico acompanhado da unidade de medida. Tem relação direta com a propriedade font-size.
+
+**Cores**
+
+- Hexadecimal > #F05331
+- RGB > rgb(240,83,49)
+- RGBA > rgba(240,83,49,0.5)
+
+`opacity: 0.5;`  permite definir o espaçamento entre linhas de um texto. Recebe um valor numérico acompanhado da unidade de medida. Tem relação direta com a propriedade font-size.\
+* Valores em frações:
+	- 1.0 = 100%
+	- 0.5 = 50%
+	- 0.2 = 20%
+	- 0.05 = 5%
+
+
+**Fundos de imagens**
+
+`background-image: url(../images/fundo.jpg);`
+
+`background-repeat: repeat;`\
+no-repeat | repeat-x | repeat-y
+
+`background-position: x y;`\
+x = left | center | right | length(px,%...)\
+y = top | center | bottom | length(px,%...)
+
+`background-attachment: scroll;`\
+fixed
+
+`background-color: #F2F2F2;`
+
+`background-size: cover;`\
+contain | length
+
+`background-image: url(../images/fundo.jpg);`
+`background-image: url(../images/fundo.jpg);`
 
 ---
 
