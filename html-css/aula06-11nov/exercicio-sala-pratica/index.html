@@ -1,106 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Layout - WIP</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <img src="img/logo.png" alt="logo">
-        <form>
-          <input type="text" placeholder="Digite sua busca">
-          <button>Buscar</button>
-        </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Layout - WIP</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="img/logo.png" alt="logo">
+      <form>
+        <input type="text" placeholder="Digite sua busca">
+        <button>Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="container">
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Feminino</a>
+      </li>
+      <li>
+        <a href="">Masculino</a>
+      </li>
+      <li>
+        <a href="">Infantil</a>
+      </li>
+      <li>
+        <a href="">Casa</a>
+      </li>
+      <li>
+        <a href="">Promoções</a>
+      </li>
+      <li>
+        <a href="">Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <aside>
+      <div>
+        <label for="tipos">Tipos</label>
+        <select name="tipos" id="tipos" multiple>
+          <option value="">Bota</option>
+          <option value="">Mocassim</option>
+          <option value="">Sapatilha</option>
+          <option value="">Alpargata</option>
+          <option value="">Sapato</option>
+          <option value="">Tênis</option>
+          <option value="">Espadrilhe</option>
+          <option value="">Sandália</option>
+        </select>
       </div>
-    </header>
 
-    <nav>
-      <ul class="container">
-        <li><a href="">Home</a></li>
-        <li><a href="">Feminino</a></li>
-        <li><a href="">Masculino</a></li>
-        <li><a href="">Infantil</a></li>
-        <li><a href="">Casa</a></li>
-        <li><a href="">Promoções</a></li>
-        <li><a href="">Contato</a></li>
-      </ul>
-    </nav>
+      <div>
+        <label for="tamanho">Tamanho</label>
+        <select name="tamanho" id="tamanho" multiple>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+        </select>
+      </div>
 
-    <div>
-      <aside>
-        <div>
-          <label for="tipos">Tipos</label>
-          <select name="tipos" id="tipos" multiple>
-            <option value="">Bota</option>
-            <option value="">Mocassim</option>
-            <option value="">Sapatilha</option>
-            <option value="">Alpargata</option>
-            <option value="">Sapato</option>
-            <option value="">Tênis</option>
-            <option value="">Espadrilhe</option>
-            <option value="">Sandália</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="tamanho">Tamanho</label>
-          <select name="tamanho" id="tamanho" multiple>
-            <option value="31">31</option>
-            <option value="32">32</option>
-            <option value="33">33</option>
-            <option value="34">34</option>
-            <option value="35">35</option>
-            <option value="36">36</option>
-            <option value="37">37</option>
-            <option value="38">38</option>
-            <option value="39">39</option>
-            <option value="40">40</option>
-            <option value="41">41</option>
-            <option value="42">42</option>
-            <option value="43">43</option>
-            <option value="44">44</option>
-            <option value="45">45</option>
-            <option value="46">46</option>
-          </select>
-        </div>
-
-        <div>
-          <label>Marcas</label>
-          <div class="listaDeCheckboxes">
-            <div>
-              <input type="checkbox" name="marca1" id="marca1" />
-              <label for="marca1">Marca 1</label>
-            </div>
-            <div>
-              <input type="checkbox" name="marca2" id="marca2" />
-              <label for="marca2">Marca 2</label>
-            </div>
-            <div>
-              <input type="checkbox" name="marca3" id="marca3" />
-              <label for="marca3">Marca 3</label>
-            </div>
-            <div>
-              <input type="checkbox" name="marca4" id="marca4" />
-              <label for="marca4">Marca 4</label>
-            </div>
+      <div class="marcas">
+        <label>Marcas</label>
+        <div class="lista-checkboxes">
+          <div>
+            <input type="checkbox" name="marca1" id="marca1" />
+            <label for="marca1">Marca 1</label>
+          </div>
+          <div>
+            <input type="checkbox" name="marca2" id="marca2" />
+            <label for="marca2">Marca 2</label>
+          </div>
+          <div>
+            <input type="checkbox" name="marca3" id="marca3" />
+            <label for="marca3">Marca 3</label>
+          </div>
+          <div>
+            <input type="checkbox" name="marca4" id="marca4" />
+            <label for="marca4">Marca 4</label>
           </div>
         </div>
-      </aside>
-      <main></main>
-    </div>
+      </div>
+    </aside>
 
-    <footer></footer>
-  </body>
+    <section>
+      <article>
+        <h4>Produto 1</h4>
+        <p class="descricao">Uma breve descrição do produto</p>
+        <img src="./img/produto.jpg" alt="">
+        <p class="valor">R$ 120,00</p>
+        <p class="vezes">Ou 3x de 40,00</p>
+        <div>
+          <a class="icones">
+            <i class="material-icons">
+              favorite
+            </i>
+            Favorito
+          </a>
+          <a class="icones">
+            <i class="material-icons">
+              attach_money
+            </i>
+            Comprar
+          </a>
+        </div>
+      </article>
+    
+      <article>
+        <h4>Produto 1</h4>
+        <p class="descricao">Uma breve descrição do produto</p>
+        <img src="./img/produto.jpg" alt="">
+        <p class="valor">R$ 120,00</p>
+        <p class="vezes">Ou 3x de 40,00</p>
+        <div>
+          <div class="icones">
+            <i class="material-icons">
+              favorite
+            </i>
+            <p>Favorito</p>
+          </div>
+          <div class="icones">
+            <i class="material-icons">
+              attach_money
+            </i>
+            <p>Comprar</p>
+          </div>
+        </div>
+      </article>
+    
+      <article>
+        <h4>Produto 1</h4>
+        <p class="descricao">Uma breve descrição do produto</p>
+        <img src="./img/produto.jpg" alt="">
+        <p class="valor">R$ 120,00</p>
+        <p class="vezes">Ou 3x de 40,00</p>
+        <div>
+          <div class="icones">
+            <i class="material-icons">
+              favorite
+            </i>
+            <p>Favorito</p>
+          </div>
+          <div class="icones">
+            <i class="material-icons">
+              attach_money
+            </i>
+            <p>Comprar</p>
+          </div>
+        </div>
+      </article>
+    
+      <article>
+        <h4>Produto 1</h4>
+        <p class="descricao">Uma breve descrição do produto</p>
+        <img src="./img/produto.jpg" alt="">
+        <p class="valor">R$ 120,00</p>
+        <p class="vezes">Ou 3x de 40,00</p>
+        <div>
+          <div class="icones">
+            <i class="material-icons">
+              favorite
+            </i>
+            <p>Favorito</p>
+          </div>
+          <div class="icones">
+            <i class="material-icons">
+              attach_money
+            </i>
+            <p>Comprar</p>
+          </div>
+        </div>
+      </article>
+    
+      <article>
+        <h4>Produto 1</h4>
+        <p class="descricao">Uma breve descrição do produto</p>
+        <img src="./img/produto.jpg" alt="">
+        <p class="valor">R$ 120,00</p>
+        <p class="vezes">Ou 3x de 40,00</p>
+        <div>
+          <div class="icones">
+            <i class="material-icons">
+              favorite
+            </i>
+            <p>Favorito</p>
+          </div>
+          <div class="icones">
+            <i class="material-icons">
+              attach_money
+            </i>
+            <p>Comprar</p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <small>ipsum dolor sit amet consectetur adipisicing elit. Eius non minus hic eum aspernatur quae aliquam repellendus alias quidem perspiciatis nostrum, ipsa mollitia est laboriosam quibusdam amet aperiam blanditiis ab!</small>
+  </footer>
+</body>
+
 </html>
