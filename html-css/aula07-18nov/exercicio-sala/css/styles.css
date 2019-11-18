@@ -1,0 +1,258 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height:100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	font-family: 'Lato', sans-serif;
+}
+
+/* CSS DO HEADER */
+	header{
+		background-color: #caeeff;
+	}
+
+	header form{
+		display: flex;
+	}
+
+	header form input{
+		padding: 10px;
+		font-size: 16px;
+		border: 1px solid #CCC;
+	}
+
+	header form button{
+		border: 1px solid #CCC;
+		padding: 0 20px;
+		color:#666;
+	}
+
+	header img{
+		height:100px;
+	}
+
+	header>div{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 0;
+	}
+	.container{
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+/* FIM DE CSS HEADER */
+
+nav {
+	border-top:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	background-color: #F0F0F0;
+	/* height: 61px; */
+}
+
+nav>ul{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between; 
+}
+
+nav>ul>li>a{
+	text-decoration: none;
+	padding: 20px;
+	display: inline-block;
+	color: #333;
+}
+
+nav>ul>li>a:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+/* aside, main{
+	border:1px solid black;
+} */
+
+.lado-lado{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+aside {
+	
+	/*
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 300px;
+	*/
+
+	flex: 0 0 300px;
+	padding: 20px;
+	border-right:1px solid #CCC; 
+}
+
+.lado-lado>aside>.asideItem{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #CCC; 
+}
+
+.lado-lado>aside>.asideItem>label{
+	display: block;
+}
+
+.lado-lado>aside>.asideItem>select{
+	width:100%;
+}
+
+.lado-lado>aside>.asideItem>select>option{
+	padding: 10px;
+}
+
+main {
+	padding: 20px;
+}
+
+.lado-lado>main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* column-gap: 10px; */
+	grid-gap: 10px;
+	/* display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 30px;
+	align-items: baseline;
+	row-gap: 50px; */
+}
+
+.lado-lado>main>.produto{
+	padding: 10px;
+}
+
+/* .lado-lado>main>.destaque{
+	grid-column-start: 1;
+	grid-column-end: 3;
+} */
+
+.lado-lado>main>.produto:hover{
+	outline: 1px solid #F0F0F0;
+	cursor: pointer;
+}
+
+.lado-lado>main>.produto:hover .controles a{
+	color: #000;
+}
+
+.lado-lado>main>.produto h3{
+	margin:0;
+	font-size: 16px;
+}
+
+.lado-lado>main>.produto p {
+	font-size: 14px;
+	margin:10px 0;
+	color:#666;
+}
+
+
+.lado-lado>main>.produto img{
+	width: 100%;
+	display: block;
+	margin-bottom:20px;
+}
+
+.lado-lado>main>.produto .info-preco{
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.lado-lado>main>.produto .info-preco .preco{
+	display: block;
+}
+
+.lado-lado>main>.produto .info-preco .parcelamento{
+	display: block;
+	font-size: 12px;
+}
+
+.lado-lado>main>.produto .controles{
+	display: flex;
+	justify-content: space-between;
+}
+
+.lado-lado>main>.produto .controles a{
+	display: inline-block;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	cursor: pointer;
+	color: #666;
+}
+
+
+footer{
+	padding: 20px;
+	background-color: #333;
+	color:#FFF;
+	margin-top: auto;
+}
+
+@media (max-width: 980px) {
+	.container {
+		width: 90%;
+		/* margin: 0 auto; */
+	}
+}
+
+@media (max-width: 750px) {
+	header > div {
+		flex-direction: column;
+	}
+
+	header img {
+		width: 300px;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.lado-lado > main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	nav > ul > li > a {
+		padding: 20px 10px;
+	}
+
+	aside {
+		flex: 0 0 180px;
+		/* ele garante que o conteúdo não encolha, já que ele é um elemento dentro do display flex e elementos dentro de uma caixa com display flex encolhem automaticamente para que todos caibam */
+	}
+}
+
+@media (max-width: 570px) {
+	nav {
+		flex: 0 0 61px;
+	}
+	/* tivemos que colocar o flex, pois já que o body tem um display flex ele achata os elementos que não tiverem conteúdo */
+
+	nav > ul {
+		display: none;
+	}
+
+	.lado-lado > main {
+		grid-template-columns: 1fr;
+	}
+}
